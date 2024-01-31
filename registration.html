@@ -17,7 +17,16 @@
     <link rel="stylesheet" href="lib/css/owl.carousel.css" />
     <link rel="stylesheet" href="lib/css/owl.theme.css" />
     <link rel="stylesheet" href="lib/css/bxslider.css" />
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=PT+Sans:400,700"
       rel="stylesheet"
@@ -47,7 +56,7 @@
                 <a href="index.html">Home</a>
               </li>
               <li>
-                <a href="index.html#features">aBOUT</a>
+                <a href="about.html">About</a>
               </li>
 
               <li>
@@ -55,17 +64,22 @@
               </li>
 
               <li>
-                <a href="#">Registration</a>
+                <a href="registration.html">Register</a>
               </li>
               <li>
-                <a
-                  href="https://smartbookings.rw/Event-Hotels/659e81f48e786/"
-                  target="_blank"
-                  >Accommodation</a
-                >
+                <a href="program.html">Program</a>
+              </li>
+              <li>
+                <a href="exhibition.html">Exhibition</a>
+              </li>
+              <li>
+                <a href="sponsorship.html">Sponsorship</a>
+              </li>
+              <li>
+                <a href="accommodation.html">Accommodation</a>
               </li>
               <li class="last">
-                <a href="index.html#contact">Contact</a>
+                <a href="travel.html">Travel</a>
               </li>
             </ul>
           </div>
@@ -79,13 +93,34 @@
         </div>
       </div>
 
-      <div id="pricing" class="call_to_action_grey_wrapper">
+      <div id="pricing" class="call_to_action_grey_wrapper beige_box pb-100">
         <div class="call_to_action_white">
-          <h4></h4>
+          <h3 class="blue">Registration Is Now Open</h3>
+          <h4>
+            The Multilateral Initiative on Malaria (MIM) Society 8th Pan-African
+            Malaria Conference (PAMC) is scheduled to take place from April
+            21-27, 2024, in Kigali, Rwanda.
+          </h4>
+          <h4>
+            Register to secure your spot to be part of this significant event in
+            the fight against malaria in Africa. Please complete your
+            registration before the deadline. Early registration ends on
+            <b>15th March 2024.</b>
+          </h4>
+          <h4>See details below for registration forms and fees.</h4>
+          <h4>We look forward to having you join us!</h4>
+
+          <h4>
+            If you have any questions on registration, please contact
+
+            <a href="mailto:mim.registration@rbc.gov.rw" class="blue"
+              ><b>mim.registration@rbc.gov.rw</b></a
+            >
+          </h4>
         </div>
       </div>
 
-      <div class="section_wrapper grey_bg">
+      <div class="section_wrapper">
         <div class="container-fluid">
           <div class="row">
             <iframe
@@ -110,13 +145,20 @@
           <a href="mailto:someone@example.com" class="contact_details"
             >mim.registration@rbc.gov.rw</a
           >
-          <a href="#" class="button_transparent">Register Now</a>
+          <a href="#" class="button_transparent text-decoration-none"
+            >Register Now</a
+          >
         </div>
       </div>
-      <!--end contact_wrapper -->
 
-      <!--begin footer -->
       <footer id="footer">
+        <div class="row">
+          <div class="text-center mb-38">
+            <h3>MIM Partners</h3>
+            <img src="lib/images/photos/MMV.png" class="partners-logo" />
+            <img src="lib/images/photos/sfh.jpg" class="partners-logo" />
+          </div>
+        </div>
         <div class="row">
           <div class="text-center">
             <p class="copyright">
@@ -125,50 +167,40 @@
 
             <ul class="social">
               <li>
-                <a href="#">
-                  <i class="fa fa-twitter"></i>
+                <a href="https://twitter.com/MIM_PAMC/" target="_blank">
+                  <i class="fab fa-x-twitter"></i>
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <i class="fa fa-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-facebook"></i>
+                <a
+                  href="https://www.linkedin.com/in/mim-society-8th-pan-african-malaria-conference-6796732a5/"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin"></i>
                 </a>
               </li>
             </ul>
           </div>
         </div>
       </footer>
-      <!--end footer -->
     </div>
-    <!--! end of #container -->
 
-    <!-- scripts concatenated and minified via ant build script-->
     <script src="lib/js/modernizr-2.6.1.min.js"></script>
     <script src="lib/js/conditional.js"></script>
     <script src="lib/js/plugins.js"></script>
     <script src="lib/js/script.js"></script>
 
-    <!-- begin jquery.sticky script-->
     <script type="text/javascript" src="lib/js/jquery.sticky.js"></script>
     <script>
       $(window).load(function () {
         $("#header_wrapper").sticky({ topSpacing: 0 });
       });
     </script>
-    <!-- end jquery.sticky script-->
 
-    <!-- begin menu scrollTo script-->
     <script src="lib/js/jquery.scrollTo-min.js"></script>
     <script type="text/javascript">
       (function ($) {
         $(document).ready(function () {
-          /* This code is executed after the DOM has been completely loaded */
-
           $("#nav li a").click(function (e) {
             var full_url = this.href;
             var parts = full_url.split("#");
@@ -182,9 +214,7 @@
         });
       })(jQuery);
     </script>
-    <!-- end menu scrollTo script-->
 
-    <!-- begin menu color script-->
     <script src="lib/js/jquery.nav.js"></script>
     <script>
       $(document).ready(function () {
@@ -194,9 +224,7 @@
         });
       });
     </script>
-    <!-- end menu color script-->
 
-    <!--begin shrink header script -->
     <script>
       $(function () {
         var shrinkHeader = 70;
@@ -213,21 +241,16 @@
         }
       });
     </script>
-    <!--end shrink header script -->
 
-    <!--begin fitvids script -->
     <script src="lib/js/jquery.fitvids.js"></script>
     <script>
-      // Basic FitVids Test
       $("#container").fitVids();
-      // Custom selector and No-Double-Wrapping Prevention Test
+
       $("#container").fitVids({
         customSelector: "iframe[src^='http://socialcam.com']",
       });
     </script>
-    <!--end fitvids script -->
 
-    <!-- begin owl.carousel script-->
     <script src="lib/js/owl.carousel.js"></script>
     <script>
       $(document).ready(function ($) {
@@ -235,9 +258,7 @@
       });
       $("body").data("page", "frontpage");
     </script>
-    <!-- end owl.carousel script-->
 
-    <!-- begin bxslider script-->
     <script src="lib/js/jquery.bxslider.min.js"></script>
     <script>
       $(".bxslider").bxSlider({
@@ -268,6 +289,5 @@
         );
       });
     </script>
-    <!-- end countdown script-->
   </body>
 </html>
