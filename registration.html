@@ -17,7 +17,10 @@
     <link rel="stylesheet" href="lib/css/owl.carousel.css" />
     <link rel="stylesheet" href="lib/css/owl.theme.css" />
     <link rel="stylesheet" href="lib/css/bxslider.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=PT+Sans:400,700"
       rel="stylesheet"
@@ -47,7 +50,7 @@
                 <a href="index.html">Home</a>
               </li>
               <li>
-                <a href="index.html#features">aBOUT</a>
+                <a href="index.html#features">About</a>
               </li>
 
               <li>
@@ -55,7 +58,16 @@
               </li>
 
               <li>
-                <a href="#">Registration</a>
+                <a href="#">Register</a>
+              </li>
+              <li>
+                <a href="program.html">Program</a>
+              </li>
+              <li>
+                <a href="exhibition.html">Exhibition</a>
+              </li>
+              <li>
+                <a href="sponsorship.html">Sponsorship</a>
               </li>
               <li>
                 <a
@@ -113,9 +125,7 @@
           <a href="#" class="button_transparent">Register Now</a>
         </div>
       </div>
-      <!--end contact_wrapper -->
 
-      <!--begin footer -->
       <footer id="footer">
         <div class="row">
           <div class="text-center">
@@ -125,50 +135,36 @@
 
             <ul class="social">
               <li>
-                <a href="#">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-facebook"></i>
+                <a
+                  href="https://twitter.com/MIM_PAMC/"
+                  class="text-decoration-none"
+                  target="_blank"
+                >
+                  <i class="fab fa-x-twitter"></i>
                 </a>
               </li>
             </ul>
           </div>
         </div>
       </footer>
-      <!--end footer -->
     </div>
-    <!--! end of #container -->
 
-    <!-- scripts concatenated and minified via ant build script-->
     <script src="lib/js/modernizr-2.6.1.min.js"></script>
     <script src="lib/js/conditional.js"></script>
     <script src="lib/js/plugins.js"></script>
     <script src="lib/js/script.js"></script>
 
-    <!-- begin jquery.sticky script-->
     <script type="text/javascript" src="lib/js/jquery.sticky.js"></script>
     <script>
       $(window).load(function () {
         $("#header_wrapper").sticky({ topSpacing: 0 });
       });
     </script>
-    <!-- end jquery.sticky script-->
 
-    <!-- begin menu scrollTo script-->
     <script src="lib/js/jquery.scrollTo-min.js"></script>
     <script type="text/javascript">
       (function ($) {
         $(document).ready(function () {
-          /* This code is executed after the DOM has been completely loaded */
-
           $("#nav li a").click(function (e) {
             var full_url = this.href;
             var parts = full_url.split("#");
@@ -182,9 +178,7 @@
         });
       })(jQuery);
     </script>
-    <!-- end menu scrollTo script-->
 
-    <!-- begin menu color script-->
     <script src="lib/js/jquery.nav.js"></script>
     <script>
       $(document).ready(function () {
@@ -194,9 +188,7 @@
         });
       });
     </script>
-    <!-- end menu color script-->
 
-    <!--begin shrink header script -->
     <script>
       $(function () {
         var shrinkHeader = 70;
@@ -213,21 +205,16 @@
         }
       });
     </script>
-    <!--end shrink header script -->
 
-    <!--begin fitvids script -->
     <script src="lib/js/jquery.fitvids.js"></script>
     <script>
-      // Basic FitVids Test
       $("#container").fitVids();
-      // Custom selector and No-Double-Wrapping Prevention Test
+
       $("#container").fitVids({
         customSelector: "iframe[src^='http://socialcam.com']",
       });
     </script>
-    <!--end fitvids script -->
 
-    <!-- begin owl.carousel script-->
     <script src="lib/js/owl.carousel.js"></script>
     <script>
       $(document).ready(function ($) {
@@ -235,9 +222,7 @@
       });
       $("body").data("page", "frontpage");
     </script>
-    <!-- end owl.carousel script-->
 
-    <!-- begin bxslider script-->
     <script src="lib/js/jquery.bxslider.min.js"></script>
     <script>
       $(".bxslider").bxSlider({
@@ -268,6 +253,5 @@
         );
       });
     </script>
-    <!-- end countdown script-->
   </body>
 </html>
