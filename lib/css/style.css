@@ -728,8 +728,7 @@ a.button_transparent:hover {
 
 .call_to_action_grey_wrapper {
   margin: 0 auto !important;
-  width: 90%;
-  padding: 0 5%;
+  width: 100%;
   position: relative;
   z-index: 1;
   background-color: #f5f5f5;
@@ -852,7 +851,7 @@ h6 {
 }
 
 .blue {
-  color: #8b4833;
+  color: #8b4833 !important;
 }
 
 .white {
@@ -1030,8 +1029,8 @@ ul.social li a i:hover {
 #intro {
   width: 100%;
   z-index: 1;
-  background: url(../images/photos/Radisson-Blue-Kigali.jpg);
-  background-position: center top;
+  background: url(../images/photos/dome-in-red_1_orig.jpg);
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -1136,8 +1135,8 @@ ul#countdown li p.timeRefSeconds {
 
 .event_wrapper {
   margin: 0 auto !important;
-  width: 90%;
-  padding: 0 5%;
+  width: 100%;
+  padding: 0 0%;
   position: relative;
   z-index: 1;
   background-color: #8b4833;
@@ -1203,8 +1202,8 @@ p.event_info span {
   padding-top: 70px;
   padding-bottom: 70px;
   text-align: center;
-  background-color: #fff;
-  border-right: 1px solid #f4f4f4;
+  background-color: #e8e2d2;
+
   transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
@@ -1215,7 +1214,7 @@ p.event_info span {
 }
 
 .services_item:hover {
-  background-color: #f5f5f5;
+  /* background-color: #f5f5f5; */
   transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
@@ -1816,7 +1815,7 @@ a.price_button.price_blue:hover {
   position: relative;
   width: 100%;
   z-index: 10;
-  background: url(../images/photos/kigali.jpeg);
+  background: url(../images/photos/footerbg.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -2373,6 +2372,7 @@ a.contact_details {
 .click-here {
   color: white !important;
   text-decoration: underline;
+  font-weight: bold;
 }
 
 /* .register {
@@ -2472,4 +2472,123 @@ a.contact_details {
 
 .mb-12 {
   margin-bottom: 12px;
+}
+
+.mb-38 {
+  margin-bottom: 38px;
+}
+
+.host_wrapper {
+  margin: 0 auto !important;
+  width: 100%;
+  padding: 0 5%;
+  position: relative;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+.abstract_wrapper {
+  margin: 0 auto !important;
+  width: 100%;
+  padding: 0 5%;
+  position: relative;
+  z-index: 1;
+  background-color: #b91c1c;
+}
+
+.host_box {
+  margin: 0 auto !important;
+  position: relative;
+  z-index: 10;
+  padding: 18px 0 0px 0;
+  width: 100%;
+}
+
+.featurebg {
+  background-color: #e8e2d2;
+}
+.text-right {
+  text-align: right;
+}
+
+.partners-logo {
+  height: 78px;
+  width: 180px;
+  object-fit: contain;
+}
+
+.mt-22 {
+  margin-top: 22px;
+  margin-right: 30px;
+}
+
+.beige_box {
+  background-color: #e8e2d2;
+}
+
+.abstract_call {
+  font-size: 30px;
+  color: white;
+}
+
+.abstract_call_sub {
+  font-size: 25px;
+}
+
+.pb-100 {
+  padding-bottom: 100px !important;
+}
+
+.travel {
+  margin: 0 auto !important;
+  position: relative;
+  z-index: 10;
+  padding: 50px 0 0 0;
+  width: 100%;
+  max-width: 960px;
+  text-align: center;
+}
+
+.p-12p {
+  font-size: 13px;
+}
+
+.venue {
+  height: 358px;
+  width: auto !important;
+  object-fit: cover;
+}
+.visa {
+  height: 552px;
+  width: auto;
+  object-fit: cover;
+}
+
+.health {
+  margin: 0 auto !important;
+  position: relative;
+  z-index: 10;
+  padding: 90px 0 0 0;
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.left {
+  text-align: left !important;
+}
+
+.travel_tips {
+  float: left;
+  
+  background-color: #fff;
+  width: 100%;
+  
+  margin-bottom: 20px;
+  padding: 70px 50px 30px 50px;
+}
+
+.features_item p {
+  line-height: 17px;
+  font-size: 14px;
 }
