@@ -956,7 +956,7 @@ a#logo span {
   text-align: center;
   color: #454545;
   padding: 0;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1111,7 +1111,7 @@ ul#countdown::before {
 
 ul#countdown li span {
   font-size: 42px;
-  line-height: 42px;
+  line-height: 12px;
   font-weight: 700;
   color: #fff;
   position: relative;
@@ -1197,7 +1197,7 @@ p.event_info span {
 
 .services_item {
   float: left;
-  width: 19.9%;
+  width: 19.9% !important;
   padding-right: 2.5%;
   padding-left: 2.5%;
   padding-top: 70px;
@@ -1523,6 +1523,7 @@ img.autor_pic {
   -webkit-border-radius: 39px 39px;
   -moz-border-radius: 39px 39px;
   border-radius: 39px 39px;
+  object-fit: contain;
 }
 
 p.autor {
@@ -1606,7 +1607,7 @@ p.bxslider_text {
 
 .team_description {
   padding: 15px 0 5px 0;
-  background-color: #fff;
+  background-color: #f3f3f3;
 }
 
 .team_name {
@@ -2494,7 +2495,7 @@ a.contact_details {
   padding: 0 5%;
   position: relative;
   z-index: 1;
-  background-color: #8B4833;
+  background-color: #8b4833;
 }
 
 .host_box {
@@ -2581,10 +2582,10 @@ a.contact_details {
 
 .travel_tips {
   float: left;
-  
+
   background-color: #fff;
   width: 100%;
-  
+
   margin-bottom: 20px;
   padding: 70px 50px 30px 50px;
 }
@@ -2592,4 +2593,18 @@ a.contact_details {
 .features_item p {
   line-height: 17px;
   font-size: 14px;
+}
+
+.row .threecol {
+  width: 23.05%;
+}
+
+.team_pic {
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.team_description {
+  height: 200px;
 }
