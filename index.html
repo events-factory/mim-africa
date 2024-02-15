@@ -18,6 +18,12 @@
     <link rel="stylesheet" href="lib/css/owl.theme.css" />
     <link rel="stylesheet" href="lib/css/bxslider.css" />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
       rel="stylesheet"
       href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
     />
@@ -51,7 +57,25 @@
                 <a href="index.html">Home</a>
               </li>
               <li>
-                <a href="about.html">About</a>
+                <a
+                  href=""
+                  class="dropdown-toggle"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  >About</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                    <a class="dropdown-item" href="about.html"
+                      >About the Conference</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="about.html#committee"
+                      >Organizing Commitee</a
+                    >
+                  </li>
+                </ul>
               </li>
 
               <li>
@@ -196,23 +220,28 @@
                 <b class="abstract_call"
                   >Call For Abstract Submissions Is Now Closed</b
                 ><br />
-                <p class="abstract_call_sub">
-                  For Submission Guidelines
-                  <a
-                    href="https://docs.google.com/document/d/1N2i_fXbvnXexyKVv31dJ3GGH-gHN32RsV-zmGWnNJ7w/edit?usp=sharing"
-                    class="click-here"
-                    target="_blank"
-                  >
-                    Click Here</a
+                <p>
+                  The conference will accept late-breaking abstract submissions
+                  from <b>1-15 March 2024.</b>
+                </p>
+                <p class="text-center">
+                  For submission guidelines
+                  <a href="abstract.html" class="click-here" target="_blank"
+                    >Click Here</a
                   >
                 </p>
+                <div class="text-center">
+                  <a href="abstract.html" class="button_white text-center"
+                    >Submit Abstract</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="services_wrapper featurebg">
-        <div class="services_item">
+      <div class="services_wrapper featurebg row justify-content-center">
+        <div class="services_item col-lg-3">
           <div class="icon_wrapper">
             <div class="icon_box">
               <i class="fa fa-users icon-8x"></i>
@@ -225,7 +254,7 @@
           </p>
         </div>
 
-        <div class="services_item">
+        <div class="services_item col-lg-3">
           <div class="icon_wrapper">
             <div class="icon_box">
               <i class="fa fa-microphone icon-8x"></i>
@@ -239,7 +268,7 @@
           </p>
         </div>
 
-        <div class="services_item">
+        <div class="services_item col-lg-3">
           <div class="icon_wrapper">
             <div class="icon_box">
               <i class="fa fa-life-ring icon-8x"></i>
@@ -252,7 +281,7 @@
           </p>
         </div>
 
-        <div class="services_item last">
+        <div class="services_item col-lg-3 last">
           <div class="icon_wrapper">
             <div class="icon_box">
               <i class="fa fa-globe icon-8x"></i>
@@ -366,8 +395,126 @@
           </div>
         </div>
       </div>
+      <div class="section_wrapper grey_border">
+        <div class="section_box testimonials_margins imigongo-bg">
+          <div class="row">
+            <div class="twelvecol">
+              <div class="threecol">
+                <div class="testimonials_wrapper">
+                  <div class="testimonials_item">
+                    <div class="testimonials_box">
+                      <p>
+                        "Grassroots mobilization is instrumental in the fight
+                        against malaria. Only combined and collective effort of
+                        individuals and communities can substantially reduce
+                        malaria transmission."
+                      </p>
+                      <img
+                        src="lib/images/photos/MABO.jpg"
+                        alt="Picture"
+                        class="autor_pic"
+                      />
+                      <span class="testimonials_arrow"></span>
+                    </div>
 
-      <div id="abstract" class="section_wrapper grey_bg abstract">
+                    <p class="autor">
+                      <span>Professor Claude Mambo MUVUNYI</span><br />
+                      Director General, Rwanda Biomedical Centre (RBC)
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="threecol">
+                <div class="testimonials_wrapper">
+                  <div class="testimonials_item">
+                    <div class="testimonials_box">
+                      <p>
+                        "Research and Development (R&D) plays a crucial role in
+                        identifying key issues that hinder the fight against
+                        malaria in Africa. However, it’s equally essential to
+                        recognize the significance of grassroots initiatives.
+                        These local efforts, often driven by passionate
+                        individuals and community organizations, contribute to
+                        the overall battle against malaria. By amplifying our
+                        R&D endeavors and simultaneously empowering grassroots
+                        movements, we can elevate innovative solutions to combat
+                        malaria."
+                      </p>
+                      <img
+                        src="lib/images/photos/Headshot ASTMH.jpg"
+                        alt="Picture"
+                        class="autor_pic"
+                      />
+                      <span class="testimonials_arrow"></span>
+                    </div>
+
+                    <p class="autor">
+                      <span>Emeritus Professor Rose Gana Fomban Leke</span
+                      ><br />
+                      Chair of the MIM Secretariat; Executive Director of the
+                      Cameroon Coalition Against Malaria
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="threecol">
+                <div class="testimonials_wrapper">
+                  <div class="testimonials_item">
+                    <div class="testimonials_box">
+                      <p>
+                        "The road to malaria elimination is not quick, nor is it
+                        easy. But through the sustained commitment and
+                        collaboration of affected countries and partners,
+                        eliminating malaria is feasible and reachable."
+                      </p>
+                      <img
+                        src="lib/images/photos/Dr Daniel pic.jpg"
+                        alt="Picture"
+                        class="autor_pic"
+                      />
+                      <span class="testimonials_arrow"></span>
+                    </div>
+
+                    <p class="autor">
+                      <span>Dr. Daniel Ngamije</span><br />
+                      Director of the Global Malaria Programme, WHO
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="threecol last">
+                <div class="testimonials_wrapper">
+                  <div class="testimonials_item">
+                    <div class="testimonials_box">
+                      <p>
+                        "Collaboration in research and technological innovation
+                        is key to fighting malaria in Africa. Let’s work
+                        together to ensure that grassroots mobilization efforts
+                        are complemented with the necessary tools to end malaria
+                        in Africa."
+                      </p>
+                      <img
+                        src="lib/images/photos/mbacham.png"
+                        alt="Picture"
+                        class="autor_pic"
+                      />
+                      <span class="testimonials_arrow"></span>
+                    </div>
+
+                    <p class="autor">
+                      <span>Professor Mbacham Fon Wilfred</span><br />
+                      Executive Director of the MIM Secretariat
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div id="abstract" class="section_wrapper grey_bg abstract">
         <div class="imigongo-bg">
           <div class="section_box">
             <div class="blue_box">
@@ -413,7 +560,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="abstract">
         <div
@@ -572,7 +719,11 @@
     <script src="lib/js/conditional.js"></script>
     <script src="lib/js/plugins.js"></script>
     <script src="lib/js/script.js"></script>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript" src="lib/js/jquery.sticky.js"></script>
     <script>
       $(window).load(function () {
