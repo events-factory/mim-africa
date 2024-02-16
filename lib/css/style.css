@@ -2603,6 +2603,7 @@ a.contact_details {
   height: 280px;
   width: 100%;
   object-fit: cover;
+  object-position: top;
 }
 
 .team_description {
