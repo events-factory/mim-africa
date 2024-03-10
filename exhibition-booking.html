@@ -37,6 +37,13 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="lib/css/magnific-popup.min.css" />
+    <link rel="stylesheet" href="lib/css/slick.min.css" />
+    <link rel="stylesheet" href="lib/css/select2.min.css" />
+    <link rel="stylesheet" href="lib/css/style.min.css" />
+    <link rel="stylesheet" href="lib/intelinpt/css/intlTelInput.css" />
 
     <script src="lib/js/jquery-1.11.1.min.js"></script>
     <script src="lib/js/jquery-migrate-1.2.1.js"></script>
@@ -136,107 +143,202 @@
 
         <div id="home">
           <div class="home_box">
-            <h2 class="countdown_title">Exhibition Packages</h2>
-            <h3 class="countdown_subtitle">Book Yours Today</h3>
+            <h2 class="countdown_title">Exhibition Booking</h2>
+            <h3 class="countdown_subtitle"></h3>
           </div>
         </div>
       </div>
 
-      <div class="section_wrapper grey_bg abstract">
-        <div class="imigongo-bg">
-          <div class="section_box">
-            <div class="row">
-              <div class="col-lg-12 my-5">
-                <h3 class="font-weight-bold">Exhibition Packages</h3>
-                <p>
-                  Discover unique exhibition opportunities to boost your brand's
-                  visibility and connect with a tailored audience through our
-                  customised packages.
-                </p>
-
-                <a
-                  href="#exhibition"
-                  class="price_button price_blue mt-5 text-decoration-none"
-                  >Become an Exhibitor</a
-                >
-                <div class="regnow mt-38 mb-38">
-                  <a
-                    href="lib/images/MIM2024 Exhibition booth floorplan.pdf"
-                    class="sponsor"
-                    download=""
-                    >Download floor plan</a
-                  >
-                </div>
-              </div>
-            </div>
-            <h3 class="mt-5">Available Booths</h3>
-            <div id="exhibition-packages"></div>
-            <div class="regnow mt-38">
-              <a
-                href="lib/images/photos/MIM2024_Exhibitor V1.pdf"
-                class="sponsor"
-                download=""
-                >Download Exhibition Packages</a
-              >
-            </div>
-            <div class="row mt-38">
-              <div class="twelvecol">
-                <h3>The Floor Plan</h3>
-                <div class="twelvecol">
-                  <img src="lib/images/photos/EXHIBITION.jpeg" width="100%" />
-                </div>
-              </div>
-            </div>
-            <div class="regnow mt-38"></div>
-          </div>
-        </div>
-      </div>
-      <div class="section_wrapper grey_bg abstract" id="exhibition">
-        <div class="imigongo-bg">
-          <div class="section_box container my-5">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <div class="form-box mt-40 mt-xl-0">
-                  <h3 class="form-title border-title contact_us mb-3">
-                    Become an Exhibitor
+      <div id="pricing" class="exhibition pb-100 pt-100 container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="col-md-12 bg-white px-3 py-3 exhibition-form">
+              <input type="hidden" id="product_key" />
+              <input type="hidden" id="unit_price" />
+              <input type="hidden" id="currency" />
+              <div class="row gx-20">
+                <div class="col-md-12">
+                  <h3 class="font-weight-bold mb-4 exhibition_booking_lang">
+                    Exhibition Booking
                   </h3>
-                  <form
-                    action="https://formspree.io/f/myyrpywk"
-                    method="POST"
-                    class="ajax-contact"
+                </div>
+                <div class="form-group col-md-6 my-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exhibition-name"
+                    name="exhibition-name"
+                    required
+                  />
+                  <label class="form-custom-label" for="exhibition-name"
+                    >Full Name</label
                   >
-                    <div class="form-group">
-                      <label for="email">Email*</label>
-                      <input
-                        type="email"
-                        class="form-control"
-                        name="email"
-                        id="email"
-                        placeholder="Your Email"
-                        required
-                      />
-                    </div>
-                    <div class="form-group mt-3">
-                      <label for="message">Message*</label>
-                      <textarea
-                        name="message"
-                        class="form-control"
-                        id="message"
-                        placeholder="Type Your Message..."
-                        required
-                      ></textarea>
-                    </div>
-                    <div class="form-btn mt-4 mb-5">
-                      <button
-                        type="submit"
-                        style="background: #8c4935; border-color: #8c4935"
-                        class="btn btn-success price_button price_blue mt-5 text-decoration-none"
-                      >
-                        Book your Stand Now
-                      </button>
-                    </div>
-                    <p class="form-messages"></p>
-                  </form>
+                </div>
+                <div class="form-group col-md-6 my-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exhibition-email"
+                    name="exhibition-email"
+                    required
+                  />
+                  <label class="form-custom-label" for="exhibition-email"
+                    >Email</label
+                  >
+                </div>
+                <div class="form-group col-md-6 my-3">
+                  <select
+                    class="form-control"
+                    id="country"
+                    name="country"
+                    required
+                  >
+                    <option selected value="" disabled></option>
+                  </select>
+                  <label class="form-custom-label select-labels" for="country"
+                    >Country</label
+                  >
+                </div>
+                <div class="form-group col-md-6 my-3">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="exhibition-phone"
+                    name="exhibition-phone"
+                    required
+                  />
+                  <label
+                    class="form-custom-label phone-label"
+                    for="exhibition-phone"
+                    >Phone Number</label
+                  >
+                </div>
+                <div class="form-group col-md-6 my-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exhibition-company"
+                    name="exhibition-company"
+                    required
+                  />
+                  <label class="form-custom-label" for="exhibition-company"
+                    >Company</label
+                  >
+                </div>
+                <div class="form-group col-md-6 my-3">
+                  <select
+                    class="form-control"
+                    id="exhibition-quantity"
+                    name="exhibition-quantity"
+                  >
+                    <option selected value="" disabled></option>
+                  </select>
+                  <label
+                    class="form-custom-label select-labels"
+                    for="exhibition-quantity"
+                    >Quantity</label
+                  >
+                </div>
+                <div class="form-group col-12 my-3">
+                  <textarea
+                    name="message"
+                    class="form-control"
+                    id="message"
+                  ></textarea>
+                  <label class="form-custom-label" for="message"
+                    >Supplementary Information</label
+                  >
+                </div>
+                <div class="form-group p-3">
+                  <div class="border">
+                    <h4
+                      class="font-weight-bold m-0 mt-2 mx-2"
+                      id="total-price"
+                    ></h4>
+                    <h5
+                      id="total-price-text"
+                      class="m-0 mx-2 mb-2 text-uppercase"
+                    ></h5>
+                  </div>
+                </div>
+                <div class="form-group col-md-12 mb-3">
+                  <select
+                    class="form-control"
+                    id="paymentMethod"
+                    name="paymentMethod"
+                    required
+                  >
+                    <option selected value="" disabled></option>
+                  </select>
+                  <label
+                    class="form-custom-label select-labels"
+                    for="paymentMethod"
+                    >Payment Method</label
+                  >
+                </div>
+              </div>
+              <p class="form-messages"></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-white border-0">
+              <div class="card-body">
+                <img
+                  class="col-12"
+                  src=""
+                  id="exhibition-image"
+                  alt="Smart Event - Events Factory"
+                />
+              </div>
+            </div>
+            <div class="card bg-white mt-3 border-0">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold border-bottom pb-2">
+                  Description
+                </h5>
+                <ul class="list-unstyled">
+                  <li class="border-bottom pb-2" id="unit-price"></li>
+                  <li class="border-bottom py-2" id="unit-size"></li>
+                </ul>
+                <p id="description-text"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade mt-100"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div id="payment-target"></div>
+              <div class="row" id="notification-row">
+                <div class="col-4 text-center">
+                  <img
+                    id="notification-image"
+                    src="assets/img/website-maintenance.gif"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div
+                  class="col-8 d-flex flex-column justify-content-center align-items-center"
+                >
+                  <h3 class="text-center" id="message-header">
+                    Payment gataway unreachable
+                  </h3>
+                  <p class="text-center" id="message-description">
+                    We are sorry for the inconvenience, our payment gataway is
+                    unreachable at the moment, please try again later.
+                  </p>
+                  <div class="text-center" id="payment_action_name"></div>
                 </div>
               </div>
             </div>
@@ -426,6 +528,27 @@
         },
       });
     </script>
-    <script src="lib/http_request/exhibition.js"></script>
+    <input type="hidden" id="exhibition_id" value="<?=$index[1]?>" />
+    <script src="lib/js/jquery-3.5.0.min.js" defer></script>
+    <script src="lib/js/slick.min.js" defer></script>
+    <script src="lib/js/select2.min.js" defer></script>
+    <script src="lib/js/bootstrap.min.js" defer></script>
+    <script src="lib/intelinpt/js/intlTelInput.js"></script>
+    <script src="lib/http_request/exhibition-booking.js" defer></script>
+    <script src="lib/js/jquery.magnific-popup.min.js" defer></script>
+    <script src="lib/js/imagesloaded.pkgd.min.js" defer></script>
+    <script src="lib/js/isotope.pkgd.min.js" defer></script>
+    <script src="lib/js/jquery.counterup.min.js" defer></script>
+    <script src="lib/js/vscustom-carousel.min.js" defer></script>
+    <script src="lib/js/jquery-ui.min.js" defer></script>
+    <script src="lib/js/tilt.jquery.min.js" defer></script>
+    <script src="lib/js/ajax-mail.js" defer></script>
+    <script
+      src="https://ap-gateway.mastercard.com/static/checkout/checkout.min.js"
+      data-error="errorCallback"
+      data-cancel="cancelCallback"
+      data-complete="completeCallback"
+    ></script>
+    <script src="lib/js/main.min.js" defer></script>
   </body>
 </html>

@@ -49,7 +49,11 @@
         <header id="header_wrapper">
           <div id="header" class="clearfix">
             <a href="index.html" id="logo"
-              ><img src="lib/images/logonobg.webp" alt="Logo" width="180"
+              ><img
+                src="lib/images/logonobg.webp"
+                alt="Logo"
+                width="180"
+                class="w-150"
             /></a>
 
             <ul id="nav">
@@ -74,6 +78,14 @@
                     <a class="dropdown-item" href="about.html#committee"
                       >Organizing Commitee</a
                     >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="wmd.html"
+                      >World Malaria Day</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="faqs.html">FAQs</a>
                   </li>
                 </ul>
               </li>
@@ -100,8 +112,28 @@
               <li class="last">
                 <a href="travel.html">Travel</a>
               </li>
-              <li class="last">
-                <a href="media.html">Media</a>
+              <li>
+                <a
+                  href="media.html"
+                  class="dropdown-toggle"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Media
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton1"
+                  style=""
+                >
+                  <li>
+                    <a class="dropdown-item" href="media.html">Media</a>
+                  </li>
+                  <br />
+                  <li>
+                    <a class="dropdown-item" href="news.html">Media Info</a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -136,6 +168,14 @@
                 <p class="timeRefSeconds">seconds</p>
               </li>
             </ul>
+            <div class="text-center">
+              <a
+                href="wmd.html"
+                class="button_white text-center text-decoration-none"
+                >Celebrate the WMD 2024 with the 8th PAMC
+                <i class="fa fa-arrow-right fa-1x mlm-2"></i
+              ></a>
+            </div>
           </div>
         </div>
       </div>
@@ -211,14 +251,16 @@
         </div>
       </div>
       <div class="abstract_wrapper">
-        <div class="event_box">
+        <div class="event_boxs">
           <div class="row">
             <div class="twelvecol">
-              <div class="twelvecol">
-                <span><i class="fas fa-paper-plane fa-3x"></i></span>
+              <div class="twelvecol text-center">
+                <span
+                  ><i class="fas fa-paper-plane fa-2x text-center"></i
+                ></span>
 
                 <b class="abstract_call"
-                  >Call For Abstract Submissions Is Now Closed</b
+                  >Call For Abstract Submissions Is Now Open</b
                 ><br />
                 <p>
                   The conference will accept late-breaking abstract submissions
@@ -226,9 +268,7 @@
                 </p>
                 <p class="text-center">
                   For submission guidelines
-                  <a href="abstract.html" class="click-here"
-                    >Click Here</a
-                  >
+                  <a href="abstract.html" class="click-here">Click Here</a>
                 </p>
                 <div class="text-center">
                   <a href="abstract.html" class="button_white text-center"
@@ -240,8 +280,8 @@
           </div>
         </div>
       </div>
-      <div class="services_wrapper featurebg row justify-content-center">
-        <div class="services_item col-lg-3">
+      <div class="services_wrapper featurebg row justify-content-center row">
+        <div class="services_item col-lg-3 col-md-6 col-sm-12">
           <div class="icon_wrapper">
             <div class="icon_box">
               <i class="fa fa-users icon-8x"></i>
@@ -254,7 +294,7 @@
           </p>
         </div>
 
-        <div class="services_item col-lg-3">
+        <div class="services_item col-lg-3 col-md-6 col-sm-12">
           <div class="icon_wrapper">
             <div class="icon_box">
               <i class="fa fa-microphone icon-8x"></i>
@@ -268,7 +308,7 @@
           </p>
         </div>
 
-        <div class="services_item col-lg-3">
+        <div class="services_item col-lg-3 col-md-6 col-sm-12">
           <div class="icon_wrapper">
             <div class="icon_box">
               <i class="fa fa-life-ring icon-8x"></i>
@@ -281,7 +321,7 @@
           </p>
         </div>
 
-        <div class="services_item col-lg-3 last">
+        <div class="services_item col-lg-3 col-md-6 col-sm-12">
           <div class="icon_wrapper">
             <div class="icon_box">
               <i class="fa fa-globe icon-8x"></i>
@@ -361,6 +401,11 @@
                     </p>
                   </li>
                 </ul>
+                <div class="my-3">
+                  <a href="faqs.html" class="price_button price_blue m-4">
+                    More FAQs</a
+                  >
+                </div>
               </div>
 
               <div class="sixcol last mb-12">
@@ -395,11 +440,154 @@
           </div>
         </div>
       </div>
-      <div class="section_wrapper grey_border">
-        <div class="section_box testimonials_margins imigongo-bg">
-          <div class="row">
-            <div class="twelvecol">
-              <div class="threecol">
+      <div class="section_wrapper grey_border beige_box">
+        <div class="section_box testimonials_margins imigongo-bg beige_box">
+          <div
+            id="carouselExample"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active row justify-content-center">
+                <div class="testimonials_wrapper col-lg-12">
+                  <div class="testimonials_item">
+                    <div class="testimonials_box my-5">
+                      <p>
+                        "Grassroots mobilization is instrumental in the fight
+                        against malaria. Only combined and collective effort of
+                        individuals and communities can substantially reduce
+                        malaria transmission."
+                      </p>
+                      <img
+                        src="lib/images/photos/MABO.jpg"
+                        alt="Picture"
+                        class="autor_pic"
+                      />
+                      <span class="testimonials_arrow"></span>
+                    </div>
+
+                    <p class="autor">
+                      <span>Professor Claude Mambo MUVUNYI</span><br />
+                      Director General, Rwanda Biomedical Centre (RBC)
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item row justify-content-center">
+                <div class="testimonials_wrapper col-lg-12 mx-auto text-center">
+                  <div class="testimonials_item">
+                    <div class="testimonials_box my-5">
+                      <p>
+                        "Research and Development (R&D) plays a crucial role in
+                        identifying key issues that hinder the fight against
+                        malaria in Africa. "
+                      </p>
+                      <p>
+                        However, it’s equally essential to recognize the
+                        significance of grassroots initiatives. These local
+                        efforts, often driven by passionate individuals and
+                        community organizations, contribute to the overall
+                        battle against malaria. By amplifying our R&D endeavors
+                        and simultaneously empowering grassroots movements, we
+                        can elevate innovative solutions to combat malaria.
+                      </p>
+
+                      <img
+                        src="lib/images/photos/Headshot ASTMH.jpg"
+                        alt="Picture"
+                        class="autor_pic"
+                      />
+                      <span class="testimonials_arrow"></span>
+                    </div>
+
+                    <p class="autor">
+                      <span>Emeritus Professor Rose Gana Fomban Leke</span
+                      ><br />
+                      Chair of the MIM Secretariat; Executive Director of the
+                      Cameroon Coalition Against Malaria
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item row justify-content-center">
+                <div class="testimonials_wrapper">
+                  <div class="testimonials_item">
+                    <div class="testimonials_box my-5">
+                      <p>
+                        "The road to malaria elimination is not quick, nor is it
+                        easy. But through the sustained commitment and
+                        collaboration of affected countries and partners,
+                        eliminating malaria is feasible and reachable."
+                      </p>
+                      <img
+                        src="lib/images/photos/Dr Daniel pic.jpg"
+                        alt="Picture"
+                        class="autor_pic"
+                      />
+                      <span class="testimonials_arrow"></span>
+                    </div>
+
+                    <p class="autor">
+                      <span>Dr. Daniel Ngamije</span><br />
+                      Director of the Global Malaria Programme, WHO
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item row justify-content-center">
+                <div class="testimonials_wrapper">
+                  <div class="testimonials_item">
+                    <div class="testimonials_box my-5">
+                      <p>
+                        "Collaboration in research and technological innovation
+                        is key to fighting malaria in Africa. Let’s work
+                        together to ensure that grassroots mobilization efforts
+                        are complemented with the necessary tools to end malaria
+                        in Africa."
+                      </p>
+                      <img
+                        src="lib/images/photos/mbacham.png"
+                        alt="Picture"
+                        class="autor_pic"
+                      />
+                      <span class="testimonials_arrow"></span>
+                    </div>
+
+                    <p class="autor">
+                      <span>Professor Mbacham Fon Wilfred</span><br />
+                      Executive Director of the MIM Secretariat
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon text-dark"
+                aria-hidden="false"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- <div class="threecol">
                 <div class="testimonials_wrapper">
                   <div class="testimonials_item">
                     <div class="testimonials_box">
@@ -523,11 +711,10 @@
                     </p>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
+              </div> -->
         </div>
       </div>
+
       <!-- <div id="abstract" class="section_wrapper grey_bg abstract">
         <div class="imigongo-bg">
           <div class="section_box">
@@ -807,7 +994,23 @@
       $("body").data("page", "frontpage");
     </script>
 
-    <script src="lib/js/jquery.bxslider.min.js"></script>
+    <!-- <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            includedLanguages: "fr,es,pt,ar,zh-CN",
+            defaultLanguage: "en",
+          },
+          "google_translate_element"
+        );
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+    <script src="lib/js/jquery.bxslider.min.js"></script> -->
     <script>
       $(".bxslider").bxSlider({
         buildPager: function (slideIndex) {

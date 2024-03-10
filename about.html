@@ -40,6 +40,12 @@
 
     <script src="lib/js/jquery-1.11.1.min.js"></script>
     <script src="lib/js/jquery-migrate-1.2.1.js"></script>
+    <style>
+      /* Hide the Google Translate top banner */
+      .goog-te-banner-frame {
+        display: none !important;
+      }
+    </style>
   </head>
 
   <body>
@@ -74,6 +80,15 @@
                       >Organizing Commitee</a
                     >
                   </li>
+
+                  <li>
+                    <a class="dropdown-item" href="wmd.html"
+                      >World Malaria Day</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="faqs.html">FAQs</a>
+                  </li>
                 </ul>
               </li>
 
@@ -99,8 +114,28 @@
               <li class="last">
                 <a href="travel.html">Travel</a>
               </li>
-              <li class="last">
-                <a href="media.html">Media</a>
+              <li>
+                <a
+                  href="media.html"
+                  class="dropdown-toggle"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Media
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton1"
+                  style=""
+                >
+                  <li>
+                    <a class="dropdown-item" href="media.html">Media</a>
+                  </li>
+                  <br />
+                  <li>
+                    <a class="dropdown-item" href="news.html">Media Info</a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -290,7 +325,7 @@
                 <h3 class="font-weight-bold">Organizing Committee</h3>
               </div>
             </div>
-            <div class="row justify-content-center">
+            <div class="row">
               <div class="col-lg-3 mt-5">
                 <div class="carousel_item">
                   <img
@@ -1387,6 +1422,23 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <!-- <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            includedLanguages: "fr,es,pt,ar,zh-CN",
+            defaultLanguage: "en",
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          },
+          "google_translate_element"
+        );
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script> -->
     <script src="lib/js/jquery.bxslider.min.js"></script>
     <script>
       $(".bxslider").bxSlider({

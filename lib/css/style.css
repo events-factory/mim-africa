@@ -508,10 +508,11 @@ table,
 fieldset,
 blockquote {
   margin-bottom: 12px !important;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 400 !important;
   line-height: 24px;
   font-family: "Lato", sans-serif;
-  font-weight: 300;
+
   color: #656565;
 }
 
@@ -638,7 +639,7 @@ body {
 }
 
 .section_box.testimonials_margins {
-  padding: 70px 0 25px 0;
+  padding: 70px 0 70px 0;
 }
 
 a.button_blue,
@@ -674,10 +675,11 @@ a.button_blue:hover {
 }
 
 a.button_white {
-  background-color: transparent;
+  background-color: #8b4833;
   border: 1px solid #fff;
   color: #fff;
-  font-weight: bolder;
+  font-weight: bolder !important;
+  font-size: 14px;
 }
 
 a.button_white:hover {
@@ -687,6 +689,7 @@ a.button_white:hover {
   transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
+  text-decoration: underline !important;
 }
 
 a.button_transparent {
@@ -918,7 +921,7 @@ h6 {
 
 #header_wrapper #header {
   width: 100%;
-  max-width: 1170px;
+  max-width: 1250px;
   margin: 0 auto;
 }
 
@@ -956,9 +959,9 @@ a#logo span {
   text-align: center;
   color: #454545;
   padding: 0;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 18px;
-  font-weight: 700;
+  font-weight: bold !important;
   text-transform: uppercase;
   font-family: "PT Sans", sans-serif;
   text-decoration: none;
@@ -1042,7 +1045,7 @@ ul.social li a i:hover {
   position: relative;
   z-index: 100;
   padding: 170px 0 80px 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .home_box {
@@ -1064,7 +1067,7 @@ h2.countdown_title {
 }
 
 h3.countdown_subtitle {
-  color: #fff;
+  color: #e8e2d2;
   font-size: 26px;
   line-height: 34px;
   font-weight: 300;
@@ -1095,7 +1098,7 @@ ul#countdown li {
   height: 90px;
   text-align: center;
   vertical-align: middle;
-  border: 2px solid #fff;
+  border: 2px solid #e8e2d2;
 }
 
 ul#countdown::after,
@@ -1163,6 +1166,29 @@ ul#countdown li p.timeRefSeconds {
 
 .event_box i {
   float: left;
+  color: #fff;
+  padding-right: 15px;
+}
+
+.event_boxs {
+  margin: 0 auto !important;
+  position: relative;
+  z-index: 10;
+  padding: 50px 0 50px 0;
+  width: 100%;
+  max-width: 1170px;
+}
+
+.event_boxs h3 {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.event_boxs p {
+  color: #fff;
+}
+
+.event_boxs i {
   color: #fff;
   padding-right: 15px;
 }
@@ -1481,6 +1507,8 @@ h3.parallax_title span {
   -webkit-border-radius: 3px 3px 5px 5px;
   -moz-border-radius: 3px 3px 5px 5px;
   border-radius: 3px 3px 5px 5px;
+  margin-left: 12% !important;
+  margin-right: 10% !important;
 }
 
 .testimonials_box p {
@@ -1488,6 +1516,7 @@ h3.parallax_title span {
   color: #656565;
   font-weight: 400;
   font-style: italic;
+  font-size: 16px;
 }
 
 .testimonials_box .testimonials_arrow {
@@ -1512,17 +1541,17 @@ h3.parallax_title span {
 img.autor_pic {
   position: absolute;
   display: block;
-  top: -39px;
+  top: -65px;
   left: 50%;
   margin-left: -39px;
-  width: 70px;
-  height: 70px;
+  width: 105px;
+  height: 105px;
   padding: 2px 2px;
   background-color: #fff;
   border: 2px solid #e3e3e3;
   -webkit-border-radius: 39px 39px;
   -moz-border-radius: 39px 39px;
-  border-radius: 39px 39px;
+  border-radius: 50%;
   object-fit: contain;
 }
 
@@ -1901,6 +1930,27 @@ a.contact_details {
 /* 						17.  MOBILE DEVICES                   */
 /* ========================================================== */
 @media handheld, only screen and (max-width: 767px) {
+  p,
+  a,
+  ul,
+  ol,
+  dl,
+  table,
+  fieldset,
+  blockquote {
+    margin-bottom: 12px !important;
+    font-size: 14px;
+    font-weight: 400 !important;
+    line-height: 24px;
+    font-family: "Lato", sans-serif;
+    color: #656565;
+  }
+
+  .abstract_call {
+    font-size: 20px !important;
+    color: white;
+  }
+
   #main {
     width: 100%;
     margin: 0 auto;
@@ -1910,14 +1960,28 @@ a.contact_details {
   }
 
   .row {
-    width: 90%;
+    width: 100%;
     min-width: 0;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
     padding-left: 5%;
     padding-right: 5%;
   }
 
+  #toggle-view {
+    list-style: none;
+    margin-bottom: 45px;
+    width: 100%;
+    margin-left: -30px;
+    width: 248px;
+  }
+  #toggle-view li {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 250px;
+  }
   .row .onecol,
   .row .twocol,
   .row .threecol,
@@ -1930,7 +1994,7 @@ a.contact_details {
   .row .tencol,
   .row .elevencol,
   .row .twelvecol {
-    width: auto;
+    width: auto !important;
     float: none;
     margin-left: 0px;
     margin-right: 0px;
@@ -1948,7 +2012,7 @@ a.contact_details {
   #header_wrapper #header {
     position: relative;
     width: 90%;
-    padding: 0 5%;
+    padding: 0 0%;
     text-align: center;
   }
 
@@ -1960,7 +2024,7 @@ a.contact_details {
 
   /* ----- logo ----- */
   a#logo {
-    margin: 15px 0 0 0 !important;
+    margin: 5px 0 0 0 !important;
   }
 
   ul.social {
@@ -1996,7 +2060,7 @@ a.contact_details {
 
   #home {
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 60px;
@@ -2028,7 +2092,7 @@ a.contact_details {
     margin: 10px 10px 20px 10px;
     padding-top: 20px;
     width: 85px;
-    height: 65px;
+    height: 85px;
   }
 
   ul#countdown li span {
@@ -2046,7 +2110,7 @@ a.contact_details {
 
   .services_item {
     float: left;
-    width: 90%;
+    width: 90% !important;
     padding-right: 5%;
     padding-left: 5%;
     padding-top: 70px;
@@ -2260,7 +2324,7 @@ a.contact_details {
 #responsive_nav_hide {
   position: absolute;
   right: 20px;
-  top: 50%;
+  top: 10%;
   text-decoration: none;
   text-align: center;
   width: 34px;
@@ -2612,4 +2676,115 @@ a.contact_details {
 
 .testimonials_box a {
   font-size: 14px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; /* Adjust the width as needed */
+  top: 50%; /* Adjust the vertical position if needed */
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  font-size: 2rem; /* Adjust the font size as needed */
+}
+
+.carousel {
+  height: 400px; /* Adjust the height as needed */
+}
+
+.carousel-inner {
+  overflow: visible; /* Ensures that controls are visible even if overflow is hidden */
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  /* width: 5%; */
+  top: 50% !important;
+  z-index: 999 !important;
+}
+
+.mlm-2 {
+  margin-left: 6px;
+}
+
+@media only screen and (max-width: 600px) {
+  .w-150 {
+    width: 150px;
+  }
+  .row {
+  }
+  #toggle-view h3 {
+    font-size: 12px;
+    color: #656565;
+    margin-bottom: 5px;
+    line-height: 16px;
+    font-weight: 400;
+    padding: 15px 0 15px 20px;
+    background-color: #eee;
+    font-family: "Lato", sans-serif;
+    width: 245px;
+  }
+}
+
+.exhibition {
+  margin: 0 auto !important;
+  width: 84% !important;
+  position: relative;
+  z-index: 1;
+  background-color: #f5f5f5;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.news_title {
+  font-size: 18p !important;
+  line-height: 28px;
+  font-weight: 600;
+  color: #656565;
+  text-align: left;
+  font-weight: 600 !important;
+}
+
+.news_p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #656565;
+  text-align: left;
+  font-weight: 400 !important;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.month {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.grey_bg {
+  background-color: #f5f5f5;
+}
+
+.call_to_action_white {
+  margin: 0 auto !important;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  background-color: #f5f5f5;
 }

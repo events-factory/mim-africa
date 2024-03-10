@@ -136,113 +136,49 @@
 
         <div id="home">
           <div class="home_box">
-            <h2 class="countdown_title">Exhibition Packages</h2>
-            <h3 class="countdown_subtitle">Book Yours Today</h3>
+            <h2 class="countdown_title">media info</h2>
+            <h3 class="countdown_subtitle"></h3>
           </div>
         </div>
       </div>
 
-      <div class="section_wrapper grey_bg abstract">
-        <div class="imigongo-bg">
-          <div class="section_box">
-            <div class="row">
-              <div class="col-lg-12 my-5">
-                <h3 class="font-weight-bold">Exhibition Packages</h3>
-                <p>
-                  Discover unique exhibition opportunities to boost your brand's
-                  visibility and connect with a tailored audience through our
-                  customised packages.
-                </p>
-
-                <a
-                  href="#exhibition"
-                  class="price_button price_blue mt-5 text-decoration-none"
-                  >Become an Exhibitor</a
+      <div id="pricing" class="call_to_action_grey_wrapper pb-100">
+        <div class="call_to_action_white container">
+          <div class="row grey_bg">
+            <div class="col-lg-3 p-0">
+              <img
+                src="lib/images/photos/wmd_bgg.jpeg"
+                class="img-fluid"
+                alt="Press"
+              />
+            </div>
+            <div class="col-lg-9 py-3 news beige_box">
+              <h4 class="text-dark font-weight-bold news_title">
+                Rwanda to Host the 8th Pan-African Malaria Conference on World
+                Malaria Day (WMD) 2024
+              </h4>
+              <p class="news_p">
+                Rwanda will host the Multilateral Initiative on Malaria (MIM
+                Society) 8th Pan-African Malaria Conference (PAMC) from 21-27
+                April 2024 under the theme .
+              </p>
+              <div class="text-left">
+                <a href="wmd.html" class="blue text-decoration-underline text-left"
+                  >Read More</a
                 >
-                <div class="regnow mt-38 mb-38">
-                  <a
-                    href="lib/images/MIM2024 Exhibition booth floorplan.pdf"
-                    class="sponsor"
-                    download=""
-                    >Download floor plan</a
-                  >
-                </div>
               </div>
             </div>
-            <h3 class="mt-5">Available Booths</h3>
-            <div id="exhibition-packages"></div>
-            <div class="regnow mt-38">
-              <a
-                href="lib/images/photos/MIM2024_Exhibitor V1.pdf"
-                class="sponsor"
-                download=""
-                >Download Exhibition Packages</a
-              >
-            </div>
-            <div class="row mt-38">
-              <div class="twelvecol">
-                <h3>The Floor Plan</h3>
-                <div class="twelvecol">
-                  <img src="lib/images/photos/EXHIBITION.jpeg" width="100%" />
-                </div>
-              </div>
-            </div>
-            <div class="regnow mt-38"></div>
+            <!-- <div
+              class="col-lg-3 beige_box text-center calendar align-items-center"
+            >
+              <p class="blue">07</p>
+              <p class="font-weight-bolder month blue">MARCH</p>
+              <p class="blue">2024</p>
+            </div> -->
           </div>
         </div>
       </div>
-      <div class="section_wrapper grey_bg abstract" id="exhibition">
-        <div class="imigongo-bg">
-          <div class="section_box container my-5">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <div class="form-box mt-40 mt-xl-0">
-                  <h3 class="form-title border-title contact_us mb-3">
-                    Become an Exhibitor
-                  </h3>
-                  <form
-                    action="https://formspree.io/f/myyrpywk"
-                    method="POST"
-                    class="ajax-contact"
-                  >
-                    <div class="form-group">
-                      <label for="email">Email*</label>
-                      <input
-                        type="email"
-                        class="form-control"
-                        name="email"
-                        id="email"
-                        placeholder="Your Email"
-                        required
-                      />
-                    </div>
-                    <div class="form-group mt-3">
-                      <label for="message">Message*</label>
-                      <textarea
-                        name="message"
-                        class="form-control"
-                        id="message"
-                        placeholder="Type Your Message..."
-                        required
-                      ></textarea>
-                    </div>
-                    <div class="form-btn mt-4 mb-5">
-                      <button
-                        type="submit"
-                        style="background: #8c4935; border-color: #8c4935"
-                        class="btn btn-success price_button price_blue mt-5 text-decoration-none"
-                      >
-                        Book your Stand Now
-                      </button>
-                    </div>
-                    <p class="form-messages"></p>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
       <div id="contact" class="contact_wrapper">
         <div class="contact_box">
           <i class="fa fa-map-marker fa-4x blue"></i><br />
@@ -426,6 +362,18 @@
         },
       });
     </script>
-    <script src="lib/http_request/exhibition.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#countdown").countdown(
+          {
+            date: "21 April 2024 12:00:00",
+            format: "on",
+          },
+
+          function () {}
+        );
+      });
+    </script>
   </body>
 </html>
