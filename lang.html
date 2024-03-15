@@ -1,0 +1,141 @@
+<html xmlns="https://www.w3.org/1999/xhtml">
+  <head id="Head1" runat="server">
+    <title>Google Translation</title>
+
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      .goog-te-banner-frame.skiptranslate {
+        display: none !important;
+      }
+      body {
+        top: 0px !important;
+      }
+      .goog-logo-link {
+        display: none !important;
+      }
+      .trans-section {
+        margin: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="trans-section">
+      <div id="google_translate_element" style="display: none"></div>
+      <select
+        class="selectpicker"
+        data-width="fit"
+        onchange="translateLanguage(this.value);"
+      >
+        <option
+          data-content='<span class="flag-icon flag-icon-af"></span> Afrikaans'
+          value="Afrikaans"
+        >
+          Afrikaans
+        </option>
+        <option
+          data-content='<span class="flag-icon flag-icon-al"></span> Albanian'
+          value="Albanian"
+        >
+          Albanian
+        </option>
+        <option
+          data-content='<span class="flag-icon flag-icon-ar"></span> Arabic'
+          value="Arabic"
+        >
+          Arabic
+        </option>
+        <option
+          data-content='<span class="flag-icon flag-icon-am"></span> Armenian'
+          value="Armenian"
+        >
+          Armenian
+        </option>
+      </select>
+      <div>
+        In this article we explain how to translate the web page into different
+        language using google translator. We create a custom country list with
+        flag and call the google translator code using javascript custom code.
+        The benifit of this custom list is than we can hide the google
+        translator widget and use all the language to translate the web page.
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script
+      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false,
+          },
+          "google_translate_element"
+        );
+      }
+
+      function translateLanguage(lang) {
+        googleTranslateElementInit();
+
+        var interval = setInterval(function () {
+          var $frame = $(".goog-te-menu-frame:first");
+          if ($frame.length) {
+            clearInterval(interval);
+
+            $frame
+              .contents()
+              .find(".goog-te-menu2-item span.text:contains(" + lang + ")")
+              .get(0)
+              .click();
+          }
+        }, 100);
+
+        return false;
+      }
+
+      $(function () {
+        $(".selectpicker").selectpicker();
+
+        if (
+          typeof google === "undefined" ||
+          typeof google.translate === "undefined"
+        ) {
+          console.error("Google Translate API is not loaded properly.");
+        }
+      });
+    </script>
+  </body>
+</html>

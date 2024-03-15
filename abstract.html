@@ -40,6 +40,28 @@
 
     <script src="lib/js/jquery-1.11.1.min.js"></script>
     <script src="lib/js/jquery-migrate-1.2.1.js"></script>
+    <style>
+      /* .translated-ltr {
+        margin-top: -40px !important;
+      }
+      .translated-ltr {
+        margin-top: -40px !important;
+      }
+      .goog-te-banner-frame {
+        display: none !important;
+        margin-top: -40px !important;
+      }
+      .goog-logo-link {
+        display: none !important;
+      }
+      .goog-te-gadget {
+        color: transparent !important;
+      } */
+      /* .VIpgJd-ZVi9od-ORHb-OEVmcd,
+      .VIpgJd-ZVi9od-l4eHX-hSRGPd {
+        display: none !important;
+      } */
+    </style>
   </head>
 
   <body>
@@ -122,7 +144,9 @@
                   style=""
                 >
                   <li>
-                    <a class="dropdown-item" href="media.html">Media</a>
+                    <a class="dropdown-item" href="media.html">
+                      Social Media Toolkit</a
+                    >
                   </li>
                   <br />
                   <li>
@@ -133,7 +157,7 @@
             </ul>
           </div>
         </header>
-
+        <div id="google_element"></div>
         <div id="home">
           <div class="home_box">
             <h2 class="countdown_title">Abstract Submisson</h2>
@@ -147,7 +171,6 @@
           <div class="container my-5">
             <div class="row">
               <div class="col-lg-12 my-5">
-                
                 <h3 class="font-weight-bold">Abstract Submission</h3>
                 <p>
                   Abstract & Symposium submission for the Multilateral
@@ -433,7 +456,7 @@
                   >
                 </p>
               </div>
-              <!-- <div class="col-lg-12 mb-3">
+              <div class="col-lg-12 mb-3">
                 <div class="text-center">
                   <a
                     href="https://www.alpoconsulting.com/"
@@ -442,7 +465,7 @@
                     >Submit Abstract</a
                   >
                 </div>
-              </div> -->
+              </div>
             </div>
           </div>
         </div>
@@ -519,7 +542,42 @@
         </div>
       </footer>
     </div>
-
+    <select
+      class="selectpicker"
+      data-width="fit"
+      onchange="translateLanguage(this.value);"
+    >
+      <option
+        data-content='<span class="flag-icon flag-icon-af"></span> Afrikaans'
+        value="Afrikaans"
+      >
+        Afrikaans
+      </option>
+      <option
+        data-content='<span class="flag-icon flag-icon-al"></span> Albanian'
+        value="Albanian"
+      >
+        Albanian
+      </option>
+      <option
+        data-content='<span class="flag-icon flag-icon-ar"></span> Arabic'
+        value="Arabic"
+      >
+        Arabic
+      </option>
+      <option
+        data-content='<span class="flag-icon flag-icon-am"></span> Armenian'
+        value="Armenian"
+      >
+        Armenian
+      </option>
+      <option
+        data-content='<span class="flag-icon flag-icon-az"></span> Azerbaijani'
+        value="Azerbaijani"
+      >
+        Azerbaijani
+      </option>
+    </select>
     <script src="lib/js/modernizr-2.6.1.min.js"></script>
     <script src="lib/js/conditional.js"></script>
     <script src="lib/js/plugins.js"></script>
@@ -596,25 +654,67 @@
         $("#owl-example").owlCarousel();
       });
       $("body").data("page", "frontpage");
+      $("body").data("flag1", true);
+      $("body").data("flag2", false);
     </script>
-    
-    <!-- <script type="text/javascript">
-      function googleTranslateElementInit() {
+
+    <!-- <script
+      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+      type="text/javascript"
+    ></script> -->
+
+    <!-- <script>
+      function loadGoogleTranslate() {
         new google.translate.TranslateElement(
           {
             pageLanguage: "en",
             includedLanguages: "fr,es,pt,ar,zh-CN",
             defaultLanguage: "en",
           },
-          "google_translate_element"
+          "google_element"
         );
       }
-    </script>
+    </script> -->
     <script
       type="text/javascript"
       src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
     ></script>
-    <script src="lib/js/jquery.bxslider.min.js"></script> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false,
+          },
+          "google_element"
+        );
+      }
+
+      function translateLanguage(lang) {
+        var $frame = $(".goog-te-menu-frame:first");
+        if (!$frame.length) {
+          alert("Error: Could not find Google translate frame.");
+          return false;
+        }
+        $frame.ready(function () {
+          $frame
+            .contents()
+            .find(".goog-te-menu2-item span.text:contains(" + lang + ")")
+            .get(0)
+            .click();
+        });
+        return false;
+      }
+
+      $(function () {
+        $(".selectpicker").selectpicker();
+      });
+    </script>
+
     <script>
       $(".bxslider").bxSlider({
         buildPager: function (slideIndex) {
