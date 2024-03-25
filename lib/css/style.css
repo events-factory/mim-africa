@@ -2788,3 +2788,21 @@ a.contact_details {
   z-index: 1;
   background-color: #f5f5f5;
 }
+
+.do-not-convert {
+  font-size: 13px;
+  line-height: 24px;
+  color: #656565;
+  text-align: left;
+  font-weight: 400 !important;
+}
+
+.do-not-convert:hover {
+  color: #8b4833;
+}
+
+.do-not-convert.active {
+  color: #8b4833;
+  font-weight: 800;
+  text-decoration: underline;
+}
