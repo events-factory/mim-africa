@@ -16065,7 +16065,7 @@ svg {
 .select-labels-active {
   top: -7px;
   width: auto;
-  background: var(--white-color);
+  background: #F5F5F5;
   padding: 0px 10px;
   color: var(--theme-color2);
 }
