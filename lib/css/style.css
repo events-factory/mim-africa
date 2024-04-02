@@ -787,7 +787,7 @@ h3.fancy_title span {
   text-transform: uppercase;
   font-weight: 700;
   font-style: normal;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 /* Headings
@@ -803,7 +803,7 @@ h6 {
   line-height: 110%;
   color: #454545;
   font-weight: 700;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Lato", sans-serif !important;
 }
 
 h1.margin_bottom,
@@ -963,7 +963,7 @@ a#logo span {
   line-height: 18px;
   font-weight: bold !important;
   text-transform: uppercase;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   text-decoration: none;
 }
 
@@ -1082,7 +1082,7 @@ h3.countdown_subtitle span {
   font-weight: 700;
   color: #8b4833;
   font-style: normal;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 ul#countdown {
@@ -1090,7 +1090,7 @@ ul#countdown {
 }
 
 ul#countdown li {
-  font-family: "PT Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   display: inline-block;
   margin: 10px 10px 40px 10px;
   padding-top: 25px;
@@ -1130,7 +1130,7 @@ ul#countdown li p.timeRefSeconds {
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 /* ========================================================== */
@@ -1207,7 +1207,7 @@ p.event_info span {
   color: #fff;
   font-style: normal;
   text-transform: uppercase;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 /* ========================================================== */
@@ -1357,7 +1357,7 @@ p.event_info span {
   border-radius: 5px;
   font-size: 14px;
   font-weight: 700;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   vertical-align: top;
   transition: background-color 0.25s ease-in-out;
   -moz-transition: background-color 0.25s ease-in-out;
@@ -1434,7 +1434,7 @@ h3.parallax_title span {
   text-transform: uppercase;
   font-weight: 700;
   font-style: normal;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 /* ========================================================== */
@@ -1568,7 +1568,7 @@ p.autor span {
   color: #454545;
   font-weight: 700;
   font-size: 16px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 /* ========================================================== */
@@ -1612,7 +1612,7 @@ span.font_pt_sans {
   text-transform: uppercase;
   font-weight: 700;
   font-style: normal;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 h3.bxslider_title::after,
@@ -2593,8 +2593,9 @@ a.contact_details {
 }
 
 .abstract_call {
-  font-size: 30px;
+  font-size: 25px;
   color: white;
+  text-transform: uppercase;
 }
 
 .abstract_call_sub {
