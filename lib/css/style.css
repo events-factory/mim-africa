@@ -2807,3 +2807,8 @@ a.contact_details {
   font-weight: 800;
   text-decoration: underline;
 }
+
+#sponsors .sponsors {
+  border-left: 0.2px solid #8b4833 !important;
+
+}
