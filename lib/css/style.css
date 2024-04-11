@@ -2816,3 +2816,9 @@ a.contact_details {
 footer .carousel {
   height: 300px;
 }
+
+.press {
+  height: 150px !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
