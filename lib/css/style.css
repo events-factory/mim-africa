@@ -2810,7 +2810,6 @@ a.contact_details {
 
 #sponsors .sponsors {
   border-left: 0.2px solid #8b4833 !important;
-
 }
 
 footer .carousel {
@@ -2821,4 +2820,15 @@ footer .carousel {
   height: 230px !important;
   width: 100% !important;
   object-fit: cover !important;
+}
+
+ol.list-group {
+  counter-reset: my-counter;
+  padding-left: 0;
+}
+
+.list-group-item::before {
+  content: counter(my-counter) ". ";
+  counter-increment: my-counter;
+  color: inherit;
 }
