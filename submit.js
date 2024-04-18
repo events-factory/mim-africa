@@ -43,21 +43,48 @@ document.getElementById('bookingForm').addEventListener('submit', function (even
     return;
   }
 
-
-  var formData = new FormData(this);
-  var xhr = new XMLHttpRequest();
-  xhr.open('POST', 'your_backend_endpoint_url_here');
-  xhr.onload = function () {
-    if (xhr.status === 200) {
-      console.log('Form data submitted successfully:', xhr.responseText);
-    } else {
-      console.error('Error submitting form data. Status:', xhr.status);
+  const data = new FormData();
+  data.append('records', JSON.stringify([
+    {
+      'input_value': $('#hotelName').val(),
+      'input_code': 'input_id_1713197303',
+      'input_type': "1"
+    },
+    {
+      'input_value': $('#arrivalDate').val(),
+      'input_code': 'input_id_04192',
+      'input_type': "4"
+    },
+    {
+      'input_value': $('#arrivalTime').val(),
+      'input_code': 'input_id_50951',
+      'input_type': "13"
+    },
+    {
+      'input_value': $('#departureDate').val(),
+      'input_code': 'input_id_92415',
+      'input_type': "4"
+    },
+    {
+      'input_value': $('#departureTime').val(),
+      'input_code': 'input_id_02858',
+      'input_type': "13"
     }
-  };
-  xhr.onerror = function () {
-    console.error('Request failed');
-  };
-  xhr.send(formData);
+  ])),
+
+    data.append('badge_id', $('#bid').val());
+  var xhr = new XMLHttpRequest();
+  xhr.withCredentials = true;
+  xhr.addEventListener("readystatechange", function () {
+    if (this.readyState === 4) {
+      let res = JSON.parse(this.responseText);
+      alert('Information submitted successfully');
+      location.reload();
+    }
+  });
+  xhr.open("POST", `https://app.smartevent.rw/MIM/addaccomodation`);
+  xhr.send(data);
+
 });
 
 function isValidEmail(email) {
@@ -82,13 +109,14 @@ document.getElementById('email').addEventListener('blur', function (event) {
         const response = JSON.parse(this.responseText);
         console.log(response);
         if (response.message === 'success') {
-          document.getElementById('emailHelp').innerText = 'Email is valid';
+          document.getElementById('bid').value = response.data
+          document.getElementById('emailHelp').innerText = response.notification;
           document.getElementById('email').classList.remove('is-invalid');
           document.getElementById('emailHelp').classList.add('text-success');
           document.getElementById('emailHelp').classList.remove('text-danger');
           enableAllInputsExcept('bookingForm');
         } else {
-          document.getElementById('emailHelp').innerText = 'Email is not valid';
+          document.getElementById('emailHelp').innerText = response.message;
           document.getElementById('email').classList.add('is-invalid');
           document.getElementById('emailHelp').classList.remove('text-success');
           document.getElementById('emailHelp').classList.add('text-danger');
@@ -146,7 +174,7 @@ function enableAllInputsExcept(formId) {
 
 var inputs = document.getElementById('bookingForm').getElementsByTagName('input');
 for (var i = 0; i < inputs.length; i++) {
-  inputs[i].addEventListener('click', function(event) {
+  inputs[i].addEventListener('click', function (event) {
     this.classList.remove('is-invalid');
   });
 }
