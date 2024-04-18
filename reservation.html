@@ -2,58 +2,426 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hotel Booking Form</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+  <title>8th Pan-African Malaria Conference</title>
+
+  <link rel="shortcut icon" href="lib/images/favicon.png" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <link rel="stylesheet" href="lib/css/style.css" />
+  <link rel="stylesheet" href="lib/css/font-awesome.css" />
+  <link rel="stylesheet" href="lib/css/owl.carousel.css" />
+  <link rel="stylesheet" href="lib/css/owl.theme.css" />
+  <link rel="stylesheet" href="lib/css/bxslider.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css" />
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet"
+    type="text/css" />
+
+  <script src="lib/js/jquery-1.11.1.min.js"></script>
+  <script src="lib/js/jquery-migrate-1.2.1.js"></script>
 </head>
 
 <body>
-  <div id="overaly"
-    style="position: absolute;; height: 100vh; width: 100%;background-color: #0000008a;top: 0; left: 0;z-index: 100;cursor: not-allowed;display: none;">
-  </div>
-  <div class="container mx-auto">
-    <div class="col-7 mx-auto">
-      <h1 class="mt-5 mb-4">Hotel Booking Form</h1>
-      <form id="bookingForm">
-        <div class="mb-3">
-          <label for="email" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
-            placeholder="Enter email">
-          <div id="emailHelp" class="form-text">We'll validate your request after entering your email ....</div>
+  <div id="container">
+    <div id="intro">
+      <header id="header_wrapper">
+        <div id="header" class="clearfix">
+          <a href="index.html" id="logo"><img src="lib/images/logonobg.webp" alt="Logo" width="180" /></a>
+
+          <ul id="nav">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="" class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown">About</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item" href="about.html">About the Conference</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="about.html#committee">Organizing Commitee</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="wmd.html">World Malaria Day</a>
+                </li>
+                <br />
+                <li>
+                  <a class="dropdown-item" href="carfreeday.html">Africa Walks Against Malaria
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="faqs.html">FAQs</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="calltohost.html">Call to Host the 9th MIM PAMC</a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="abstract.html">Abstract Guidelines</a>
+            </li>
+
+            <li>
+              <a href="registration.html">Register</a>
+            </li>
+            <li>
+              <a href="program.html">Program</a>
+            </li>
+            <li>
+              <a href="exhibition.html">Exhibition</a>
+            </li>
+            <li>
+              <a href="sponsorship.html">Sponsorship</a>
+            </li>
+            <li>
+              <a href="accommodation.html">Accommodation</a>
+            </li>
+            <li class="last">
+              <a href="travel.html">Travel</a>
+            </li>
+            <li>
+              <a href="media.html" class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                aria-expanded="false">Media
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="">
+                <li>
+                  <a class="dropdown-item" href="media.html">Social Media Toolkit</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="mediakit.html">Media Kit</a>
+                </li>
+                <br />
+                <li>
+                  <a class="dropdown-item" href="news.html">Media Info</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-        <div class="mb-3">
-          <label for="hotelName" class="form-label">Hotel Name</label>
-          <input type="text" class="form-control" id="hotelName" name="hotelName" placeholder="Enter hotel name">
+      </header>
+
+      <div id="home">
+        <div class="home_box">
+          <h2 class="countdown_title">Accommodation Information</h2>
+          <h3 class="countdown_subtitle">Please provide your Accommodation info</h3>
         </div>
-        <div class="row mb-3">
-          <div class="col">
-            <label for="arrivalDate" class="form-label">Arrival Date</label>
-            <input type="date" class="form-control" id="arrivalDate" name="arrivalDate">
-          </div>
-          <div class="col">
-            <label for="arrivalTime" class="form-label">Arrival Time</label>
-            <input type="time" class="form-control" id="arrivalTime" name="arrivalTime">
-          </div>
-        </div>
-        <div class="row mb-3">
-          <div class="col">
-            <label for="departureDate" class="form-label">Departure Date</label>
-            <input type="date" class="form-control" id="departureDate" name="departureDate">
-          </div>
-          <div class="col">
-            <label for="departureTime" class="form-label">Departure Time</label>
-            <input type="time" class="form-control" id="departureTime" name="departureTime">
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+      </div>
     </div>
+
+    <div class="section_wrapper grey_bg abstract">
+      <div class="imigongo-bg">
+        <div class="my-5 py-2">
+          <div class="row">
+            <div id="overaly"
+              style="position: absolute;; height: 100vh; width: 100%;background-color: #0000008a;top: 0; left: 0;z-index: 100;cursor: not-allowed;display: none;">
+            </div>
+            <div class="container mx-auto">
+              <div class="col-7 mx-auto">
+                <form id="bookingForm">
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
+                      placeholder="Enter email">
+                    <div id="emailHelp" class="form-text">We'll validate your request after entering your email ....
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="hotelName" class="form-label">Hotel Name</label>
+                    <input type="text" class="form-control" id="hotelName" name="hotelName"
+                      placeholder="Enter hotel name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="arrivalDate" class="form-label">Arrival Date</label>
+                    <input type="date" class="form-control" id="arrivalDate" name="arrivalDate">
+                  </div>
+                  <div class="mb-3">
+                    <label for="arrivalTime" class="form-label">Arrival Time</label>
+                    <input type="time" class="form-control" id="arrivalTime" name="arrivalTime">
+                  </div>
+                  <div class="mb-3">
+                    <label for="departureDate" class="form-label">Departure Date</label>
+                    <input type="date" class="form-control" id="departureDate" name="departureDate">
+                  </div>
+                  <div class="mb-3">
+                    <label for="departureTime" class="form-label">Departure Time</label>
+                    <input type="time" class="form-control" id="departureTime" name="departureTime">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+            <input type="hidden" id="bid">
+          </div>
+          <div class="regnow mt-38"></div>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="contact_wrapper">
+      <div class="contact_box">
+        <i class="fa fa-map-marker fa-4x blue"></i><br />
+        <h5 class="contact_title">CONTACT US</h5>
+        <ul>
+          <li>
+            <a href="mailto:someone@example.com" class="contact_details">mim.queries@rbc.gov.rw</a>
+          </li>
+        </ul>
+
+        <h5 class="contact_title">FOLLOW US ON</h5>
+
+        <ul class="social">
+          <li>
+            <a href="https://twitter.com/MIM_PAMC/" target="_blank">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/mim-society-8th-pan-african-malaria-conference/?viewAsMember=true"
+              target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+        <a href="registration.html" class="button_transparent text-decoration-none">Register Now</a>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div id="carouselExample" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active row justify-content-center">
+            <div class="col-lg-12">
+              <h6 class="text-center text-uppercase blue mb-5">
+                <b>CONFERENCE HOSTS</b>
+              </h6>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-2 col-md-3 col-sm-6 p-3">
+                <a href="https://www.moh.gov.rw/" target="_blank">
+                  <img src="lib/images/sponsors/MoH logo Landscape English.png" alt="Smart Event - Events Factory"
+                    class="partners-logo" />
+                </a>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-6 p-3">
+                <a href="https://themimsociety.org/" target="_blank">
+                  <img src="lib/images/photos/MIMS-LOGO.png" alt="Smart Event - Events Factory" class="partners-logo" />
+                </a>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-6 p-3">
+                <a href="https://www.rbc.gov.rw/" target="_blank">
+                  <img src="lib/images/sponsors/RBC-LOGO_Sept30_2019-Regular.png" alt="Smart Event - Events Factory"
+                    class="partners-logo" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item row justify-content-center mt-5">
+            <div class="col-lg-12">
+              <h6 class="text-center text-uppercase blue mb-5">
+                <b>CONFERENCE PARTNERS</b>
+              </h6>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-2 col-md-3 col-sm-6 p-3 sponsors">
+                <a href="https://www.rbc.gov.rw/" target="_blank">
+                  <img src="lib/images/sponsors/sfh.jpg" alt="Smart Event - Events Factory" class="partners-logo" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item row justify-content-center mt-5">
+            <div class="col-lg-12">
+              <h6 class="text-center text-uppercase blue mb-5">
+                <b>INDASHYIKIRWA (Platinum)</b>
+              </h6>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-2 col-md-3 col-sm-6 p-3">
+                <a href="https://www.gatesfoundation.org/" target="_blank">
+                  <img src="lib/images/sponsors/gatesfoundation.png" alt="Smart Event - Events Factory"
+                    class="partners-logo" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item row justify-content-center mt-5">
+            <div class="col-lg-12">
+              <h6 class="text-center text-uppercase blue mb-5">
+                <b>ICYOGERE (Gold)</b>
+              </h6>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-2 col-md-3 col-sm-6 p-3">
+                <a href="https://www.fosunpharma.com/en/" target="_blank">
+                  <img src="lib/images/sponsors/FOSUNPHARMA.png" alt="Smart Event - Events Factory"
+                    class="partners-logo" />
+                </a>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-6 p-3">
+                <a href="https://endmalaria.org/" target="_blank">
+                  <img src="lib/images/photos/rbm.jpeg" alt="Smart Event - Events Factory" class="partners-logo" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item row justify-content-center mt-5">
+            <div class="col-lg-12">
+              <h6 class="text-center text-uppercase blue mb-5">
+                <b>IMPOTORE - Emerald</b>
+              </h6>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-2 col-md-3 col-sm-6 p-3">
+                <a href="https://www.mmv.org/" target="_blank">
+                  <img src="lib/images/sponsors/MMV.png" alt="Smart Event - Events Factory" class="partners-logo" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item row justify-content-center mt-5">
+            <div class="col-lg-12">
+              <h6 class="text-center text-uppercase blue mb-5">
+                <b>IMFURA - Ruby</b>
+              </h6>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-2 col-md-3 col-sm-6 p-3">
+                <a href="https://www.biontech.com/int/en/home.html" target="_blank">
+                  <img src="lib/images/sponsors/230531_Biontech_Logo_ForestGreen.png" alt="Smart Event - Events Factory"
+                    class="partners-logo" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row beige_box py-4">
+        <div class="text-center">
+          <p class="copyright mt-3">
+            Copyright © 2024 Events Factory. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
   </div>
-  <input type="hidden" id="bid">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="submit.js"></script>
+  <script src="lib/js/modernizr-2.6.1.min.js"></script>
+  <script src="lib/js/conditional.js"></script>
+  <script src="lib/js/plugins.js"></script>
+  <script src="lib/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <script src="submit.js"></script>
+  <script type="text/javascript" src="lib/js/jquery.sticky.js"></script>
+  <script>
+    $(window).load(function () {
+      $("#header_wrapper").sticky({ topSpacing: 0 });
+    });
+  </script>
+
+  <script src="lib/js/jquery.scrollTo-min.js"></script>
+  <script type="text/javascript">
+    (function ($) {
+      $(document).ready(function () {
+        $("#nav li a").click(function (e) {
+          var full_url = this.href;
+          var parts = full_url.split("#");
+          var trgt = parts[1];
+          var target_offset = $("#" + trgt).offset();
+          var target_top = target_offset.top;
+
+          $("html,body").animate({ scrollTop: target_top - 70 }, 1000);
+          return false;
+        });
+      });
+    })(jQuery);
+  </script>
+
+  <script src="lib/js/jquery.nav.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#nav").onePageNav({
+        filter: ":not(.external)",
+        scrollThreshold: 0.25,
+      });
+    });
+  </script>
+
+  <script>
+    $(function () {
+      var shrinkHeader = 70;
+      $(window).scroll(function () {
+        var scroll = getCurrentScroll();
+        if (scroll >= shrinkHeader) {
+          $("#header_wrapper").addClass("shrink");
+        } else {
+          $("#header_wrapper").removeClass("shrink");
+        }
+      });
+      function getCurrentScroll() {
+        return window.pageYOffset;
+      }
+    });
+  </script>
+
+  <script src="lib/js/jquery.fitvids.js"></script>
+  <script>
+    $("#container").fitVids();
+
+    $("#container").fitVids({
+      customSelector: "iframe[src^='http://socialcam.com']",
+    });
+  </script>
+
+  <script src="lib/js/owl.carousel.js"></script>
+  <script>
+    $(document).ready(function ($) {
+      $("#owl-example").owlCarousel();
+    });
+    $("body").data("page", "frontpage");
+  </script>
+
+  <!-- <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            includedLanguages: "fr,es,pt,ar,zh-CN",
+            defaultLanguage: "en",
+          },
+          "google_translate_element"
+        );
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+    <script src="lib/js/jquery.bxslider.min.js"></script> -->
+  <script>
+    $(".bxslider").bxSlider({
+      buildPager: function (slideIndex) {
+        switch (slideIndex) {
+          case 0:
+            return '<i class="fa fa-file-image-o carousel_icons"></i>';
+          case 1:
+            return '<i class="fa fa-microphone carousel_icons"></i>';
+          case 2:
+            return '<i class="fa fa-life-ring carousel_icons"></i>';
+          case 3:
+            return '<i class="fa fa-graduation-cap carousel_icons"></i>';
+        }
+      },
+    });
+  </script>
+  <script src="lib/http_request/exhibition.js"></script>
+  <script src="lib/js/translator.js"></script>
 </body>
 
 </html>
