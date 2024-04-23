@@ -2832,3 +2832,17 @@ ol.list-group {
   counter-increment: my-counter;
   color: inherit;
 }
+
+.award_description {
+  height: 130px;
+  padding: 15px 0 5px 0;
+  
+}
+
+.award_pic {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+}
