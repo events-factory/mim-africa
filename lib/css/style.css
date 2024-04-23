@@ -2836,7 +2836,6 @@ ol.list-group {
 .award_description {
   height: 130px;
   padding: 15px 0 5px 0;
-  
 }
 
 .award_pic {
@@ -2845,4 +2844,28 @@ ol.list-group {
   object-fit: cover;
   object-position: top;
   border-radius: 50%;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #e8e2d2 !important;
+  color: #8b4833 !important;
+  font-family: "Lato", sans-serif !important;
+}
+
+.accordion-item:first-of-type .accordion-button {
+  background-color: #e8e2d2 !important;
+  color: #8b4833 !important;
+  font-family: "Lato", sans-serif !important;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+  background-color: #e8e2d2 !important;
+  color: #8b4833 !important;
+  font-family: "Lato", sans-serif !important;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: transparent !important;
+  box-shadow: none !important;
 }
