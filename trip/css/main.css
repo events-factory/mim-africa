@@ -2986,3 +2986,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 .owl-height {
   height: 450px !important;
 }
+
+modal-left p {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
