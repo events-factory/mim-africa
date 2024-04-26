@@ -123,7 +123,7 @@ if(isset($_POST['submit']))
   </script>
 </head>
 <body>
-  <header id="header" id="home">
+  <!-- <header id="header" id="home">
     <div class="container">
       <div class="row align-items-center justify-content-between d-flex">
         <div id="logo">
@@ -131,13 +131,12 @@ if(isset($_POST['submit']))
         </div>
         <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="field.php" style="color: #feffff !important;">Study Trip</a></li>
-          <!-- <li><a href="side-event.php" style="color: #feffff !important;">Side Event</a></li> -->
+          
         </ul>
         </nav>
       </div>
     </div>
-  </header>
+  </header> -->
   <section class="model-area section-gap" id="cars" style="background:url(img/5234064.jpg)">
 
     <div class="container">
@@ -156,19 +155,19 @@ if(isset($_POST['submit']))
       <div class="row align-items-center single-model item">
           <div class="col-lg-6 model-left">
             <div class="title justify-content-between d-flex">
-              <h4 class="mt-20">Karama IDP Model Village</h4>
+              <h4 class="mt-20">⁠Drone-Based Larviciding</h4>
               <h2>40<span>Slots</span></h2>
             </div>
             <p>
-            -Location: Nyarugenge  District<br>
-            -Socio-economic infrastructure facilities: Accommodation of 144 families (680 households) <br>
-            -Labour intensive: Agribusiness activities like livestock (Cows, poultry,..),Agakiriro<br>
-            -Environmental protection: Rwanda’s efforts in community development and welfare and relocation of population from high-risk zones<br>
+            Drone-based larviciding in Rwanda is revolutionizing the fight against mosquito-borne diseases like malaria. Equipped with precision spraying technology, drones target breeding sites in remote areas, reducing mosquito populations and disease risk. This innovative approach ensures efficient and widespread coverage, protecting communities' health and well-being.
+
+
+            
             </p>
-            <button class="text-uppercase primary-btn" onclick="pickchoice('Karama IDP Model Village', 201)" href="#home">Book a Slot Now</button>
+            <button class="text-uppercase primary-btn" onclick="pickchoice('⁠Drone-Based Larviciding', 41)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
-            <img class="img-fluid field-img" src="img/karama.jpg" alt="">
+            <img class="img-fluid field-img" src="img/drone.jpg" alt="">
           </div>
         </div>
 
@@ -177,61 +176,39 @@ if(isset($_POST['submit']))
         <div class="row align-items-center single-model item">
           <div class="col-lg-6 model-left">
             <div class="title justify-content-between d-flex">
-              <h4 class="mt-20">Gisozi Genocide Museum</h4>
-              <h2>60<span>Slots</span></h2>
+              <h4 class="mt-20">⁠Insectary and ⁠Entomology Lab</h4>
+              <h2>20<span>Slots</span></h2>
             </div>
             <p>
-            The Kigali Genocide Memorial commemorates the 1994 Rwandan genocide. The remains of over 250,000 people are interred there. There is a visitor centre for students and others wishing to understand the events leading up to the genocide that occurred in Rwanda in 1994.
-            </p>
-            <p>
-              
-            </p>
-            <button class="text-uppercase primary-btn" onclick="pickchoice('Gisozi Genocide Museum', 41)" href="#home">Book a Slot Now</button>
+            The insectary and entomology lab in Rwanda represent a crucial advancement in the fight against vector-borne diseases. Through studying insect behavior and biology, researchers can enhance disease control strategies. Additionally, the insectary enables controlled mosquito rearing for innovative research on vector control methods. This investment highlights Rwanda's dedication to public health innovation and strengthens its disease surveillance capabilities.
+           </p>
+            
+            <button class="text-uppercase primary-btn" onclick="pickchoice('⁠Insectary and ⁠Entomology Lab', 21)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
-            <img class="img-fluid field-img" src="img/gisozigenocidememorial.png" alt="">
+            <img class="img-fluid field-img" src="img/insect.jpg" alt="">
           </div>
         </div>
 
         <div class="row align-items-center single-model item">
           <div class="col-lg-6 model-left">
             <div class="title justify-content-between d-flex">
-              <h4 class="mt-20">MASAKA CREAMERY FACTORY</h4>
-              <h2>40<span>Slots</span></h2>
+              <h4 class="mt-20">Indoor Residual Spraying</h4>
+              <h2>20<span>Slots</span></h2>
             </div>
             <p>
-            Rwanda embarked on promoting the local economic development by addressing some of the domestic private sector constraints such as availability of industrial and commercial land. The Government put in place the Kigali Special Economic Zone in which Masaka Creamery factory is located 20KM from central town.
-            Masaka Creamery factory started in 2016 and later shifted to Kigali Special Economic Zone in 2018. It produces milk products like, fermented milk (Ikivuguto), yoghourt and butter).
-            Fresh milk is bought from Gicumbi district, being the nearest, and the highest in milk production in the country. Currently they use more than 4000liters of Milk per day. Their biggest market is private sector (super markets and shops) both in and outside Rwanda.
-            </p>
+            Indoor residual spraying (IRS) is a cornerstone of Rwanda's malaria control efforts, significantly reducing mosquito populations and disease transmission. By targeting the interior walls of homes with insecticides, IRS effectively kills mosquitoes that come into contact with treated surfaces. This method provides long-lasting protection for households, particularly in areas where mosquitoes are resistant to other control measures. Rwanda's commitment to IRS reflects its proactive approach to malaria prevention, safeguarding communities and advancing towards the goal of malaria elimination</p>
             <p>
               
             </p>
-            <button class="text-uppercase primary-btn" onclick="pickchoice('MASAKA CREAMERY FACTORY', 101)" href="#home">Book a Slot Now</button>
+            <button class="text-uppercase primary-btn" onclick="pickchoice('Indoor Residual Spraying', 21)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
-            <img class="img-fluid field-img" src="img/masaka.jpg" alt="">
+            <img class="img-fluid field-img" src="img/spray.jpg" alt="">
           </div>
         </div>
         
-        <div class="row align-items-center single-model item">
-          <div class="col-lg-6 model-left">
-            <div class="title justify-content-between d-flex">
-              <h4 class="mt-20">Nyandungu Urban Waterland Eco-tourism park</h4>
-              <h2>60<span>Slots</span></h2>
-            </div>
-            <p>
-            Nyandungu Urban Wetland Ecotourism park is a 120 hectares of surface area, Rwandan tourism park located between Gasabo and Kicukiro Districts which allows sustainable travel of people to enjoy natural areas and wild animals in Nyandungu Valley.
-            </p>
-            <p>
-              
-            </p>
-            <button class="text-uppercase primary-btn" onclick="pickchoice('Nyandungu Urban Waterland Eco-tourism park', 21)" href="#home">Book a Slot Now</button>
-          </div>
-          <div class="col-lg-6 model-right">
-            <img class="img-fluid field-img" src="img/nyandungu.png" alt="">
-          </div>
-        </div>
+        
         
         
       </div>
@@ -242,24 +219,19 @@ if(isset($_POST['submit']))
     <div class="container">
       <div class="row fullscreen d-flex align-items-center justify-content-center">
         <div class="col-lg-12 col-md-12 header-right">
-          <h4 class="text-white pb-30">Book Your Spot Today!</h4>
+          <h4 class="text-white pb-30">Book Your Spot Today! The Trip is from 8.30am</h4>
           <form class="form" role="form" autocomplete="off" method="POST" action="" name="insert">
             <div class="form-group row">
               <div class="col-md-12 wrap-left">
                 <div class="" id="default-select">
                   <select class="form-control" name="trip" required id="select-element-trip">
                     <option value="" disabled selected hidden>Field Visit Location</option>
-                    <option value="Pink Mango">Pink Mango</option>
-                    <option value="Muhanga ICPC">Muhanga ICPC</option>
-                    <option value="Center of Excellence: Rwanda Coding Academy">Center of Excellence: Rwanda Coding Academy</option>
-                    <option value="IPRC Tumba">IPRC Tumba</option>
-                    <option value="Ampersand in Kigali">Ampersand in Kigali</option>
-                    <option value="Karama IDP Model Village">Karama IDP Model Village</option>
-                    <option value="Gisozi Genocide Museum">Gisozi Genocide Museum</option>
-                    <option value="Kigali City Tour">Kigali City Tour</option>
-                    <option value="Nyandungu Urban Waterland Eco-tourism park">Nyandungu Urban Waterland Eco-tourism park</option>
-                    <option value="Conference Infrastructure (KCC & BK Arena)">Conference Infrastructure (KCC & BK Arena)</option>
-                    <option value="MASAKA CREAMERY FACTORY">MASAKA CREAMERY FACTORY</option>                 
+                   
+                    <option value="⁠Drone-Based Larviciding">⁠Drone-Based Larviciding</option>
+                    <option value="⁠Insectary and ⁠Entomology Lab">⁠Insectary and ⁠Entomology Lab</option>
+                    
+                   
+                    <option value="Indoor Residual Spraying">Indoor Residual Spraying</option>                 
                   </select>
                 </div>
               </div>
