@@ -2954,6 +2954,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .model-left p {
   color: #191919;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .field-img {
