@@ -167,7 +167,7 @@ if(isset($_POST['submit']))
             <button class="text-uppercase primary-btn" onclick="pickchoice('⁠Drone-Based Larviciding', 41)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
-            <img class="img-fluid field-img" src="img/drone.jpg" alt="">
+            <img class="img-fluid field-img" src="img/drone.jpeg" alt="">
           </div>
         </div>
 
