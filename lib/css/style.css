@@ -2870,3 +2870,9 @@ ol.list-group {
   border-color: transparent !important;
   box-shadow: none !important;
 }
+
+.accordion-button {
+  background-color: #e8e2d2 !important;
+  color: #8b4833 !important;
+  font-family: "Lato", sans-serif !important;
+}
