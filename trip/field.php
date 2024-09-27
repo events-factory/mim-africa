@@ -155,19 +155,17 @@ if(isset($_POST['submit']))
       <div class="row align-items-center single-model item">
           <div class="col-lg-6 model-left">
             <div class="title justify-content-between d-flex">
-              <h4 class="mt-20">⁠Drone-Based Larviciding</h4>
-              <h2>40<span>Slots</span></h2>
+              <h4 class="mt-20">Bugesera International Airport</h4>
+              <h2>30<span>Slots</span></h2>
             </div>
             <p>
-            Drone-based larviciding in Rwanda is revolutionizing the fight against mosquito-borne diseases like malaria. Equipped with precision spraying technology, drones target breeding sites in remote areas, reducing mosquito populations and disease risk. This innovative approach ensures efficient and widespread coverage, protecting communities' health and well-being.
-
-
+            Located 40 kilometers south of Kigali, the new Bugesera International Airport is scheduled for completion by late 2026, with an estimated cost of $2 billion. The airport will feature a 130,000-square-meter main terminal building designed to handle 8 million passengers annually, with future expansions expected to accommodate more than 14 million. Additionally, the airport will include a cargo terminal with the capacity to process 150,000 tons of cargo per year. This development is set to position Rwanda as a significant aviation hub in Africa, contributing to both national and regional economic growth.
             
             </p>
-            <button class="text-uppercase primary-btn" onclick="pickchoice('⁠Drone-Based Larviciding', 41)" href="#home">Book a Slot Now</button>
+            <button class="text-uppercase primary-btn" onclick="pickchoice('Bugesera International Airport (Limited Slots)', 41)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
-            <img class="img-fluid field-img" src="img/drone.jpeg" alt="">
+            <img class="img-fluid field-img" src="img/bugesera.png" alt="">
           </div>
         </div>
 
@@ -176,35 +174,37 @@ if(isset($_POST['submit']))
         <div class="row align-items-center single-model item">
           <div class="col-lg-6 model-left">
             <div class="title justify-content-between d-flex">
-              <h4 class="mt-20">⁠Insectary and ⁠Entomology Lab</h4>
-              <h2>20<span>Slots</span></h2>
+              <h4 class="mt-20">Nyabarongo II Multipurpose Dam</h4>
+              <h2>80<span>Slots</span></h2>
             </div>
             <p>
-            The insectary and entomology lab in Rwanda represent a crucial advancement in the fight against vector-borne diseases. Through studying insect behavior and biology, researchers can enhance disease control strategies. Additionally, the insectary enables controlled mosquito rearing for innovative research on vector control methods. This investment highlights Rwanda's dedication to public health innovation and strengthens its disease surveillance capabilities.
-           </p>
+            The Nyabarongo II Hydropower Plant is a vital multipurpose project for Rwanda’s renewable energy, water management, and agricultural development. Located on the Nyabarongo River, this project is designed to generate 43.5 MW of electricity while also mitigating the frequent downstream flooding that has posed risks to local communities. In addition to power generation, the dam will support irrigation and water supply efforts, playing a critical role in Rwanda’s sustainable development goals. The project, fully funded by the Government of Rwanda, involves the construction of a 48-meter-high concrete gravity dam with a crest length of 228 meters, featuring a surface power station equipped with two 8.5 MW Kaplan turbines. Construction began in late 2019 and is projected for completion by 2025.
+This hydropower project underscores Rwanda’s commitment to addressing both energy needs and environmental challenges.
+         </p>
             
-            <button class="text-uppercase primary-btn" onclick="pickchoice('⁠Insectary and ⁠Entomology Lab', 21)" href="#home">Book a Slot Now</button>
+            <button class="text-uppercase primary-btn" onclick="pickchoice('Nyabarongo II Multipurpose Dam', 21)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
-            <img class="img-fluid field-img" src="img/insect.jpg" alt="">
+            <img class="img-fluid field-img" src="img/nyabarongo.jpg" alt="">
           </div>
         </div>
 
         <div class="row align-items-center single-model item">
           <div class="col-lg-6 model-left">
             <div class="title justify-content-between d-flex">
-              <h4 class="mt-20">Indoor Residual Spraying</h4>
-              <h2>20<span>Slots</span></h2>
+              <h4 class="mt-20">Norrsken House Kigali</h4>
+              <h2>80<span>Slots</span></h2>
             </div>
             <p>
-            Indoor residual spraying (IRS) is a cornerstone of Rwanda's malaria control efforts, significantly reducing mosquito populations and disease transmission. By targeting the interior walls of homes with insecticides, IRS effectively kills mosquitoes that come into contact with treated surfaces. This method provides long-lasting protection for households, particularly in areas where mosquitoes are resistant to other control measures. Rwanda's commitment to IRS reflects its proactive approach to malaria prevention, safeguarding communities and advancing towards the goal of malaria elimination</p>
-            <p>
+            Norrsken House Kigali stands as a beacon of sustainability and innovation, fostering entrepreneurship in the heart of Africa. Built on the historic premises of Ecole Belge, this 12,000-square-meter space blends Kigali’s rich heritage with forward-thinking design to create East Africa’s largest hub for entrepreneurship. The workspace brings together a thriving community of purpose-driven entrepreneurs, investors, and changemakers, all working toward impactful solutions.
+As part of Rwanda’s digital transformation, Norrsken House offers more than just a workspace; it provides shared resources and a collaborative environment where startups at various stages—whether scaling or just beginning—can thrive. Participants will experience firsthand how Rwanda is embracing a sustainable future through innovation, with Norrsken serving as a home, knowledge center, and connector for entrepreneurs focused on social impact.
+  <p>
               
             </p>
-            <button class="text-uppercase primary-btn" onclick="pickchoice('Indoor Residual Spraying', 21)" href="#home">Book a Slot Now</button>
+            <button class="text-uppercase primary-btn" onclick="pickchoice('Norrsken House Kigali', 21)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
-            <img class="img-fluid field-img" src="img/spray.jpg" alt="">
+            <img class="img-fluid field-img" src="img/NORRSKEN.png" alt="">
           </div>
         </div>
         
@@ -227,11 +227,11 @@ if(isset($_POST['submit']))
                   <select class="form-control" name="trip" required id="select-element-trip">
                     <option value="" disabled selected hidden>Field Visit Location</option>
                    
-                    <option value="⁠Drone-Based Larviciding">⁠Drone-Based Larviciding</option>
-                    <option value="⁠Insectary and ⁠Entomology Lab">⁠Insectary and ⁠Entomology Lab</option>
+                    <option value="Bugesera International Airport (Limited Slots)">Bugesera International Airport (Limited Slots)</option>
+                    <option value="Nyabarongo II Multipurpose Dam">Nyabarongo II Multipurpose Dam</option>
                     
                    
-                    <option value="Indoor Residual Spraying">Indoor Residual Spraying</option>                 
+                    <option value="Norrsken House Kigali">Norrsken House Kigali</option>                 
                   </select>
                 </div>
               </div>
