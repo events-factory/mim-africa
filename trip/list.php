@@ -85,38 +85,7 @@ $fetchdata = new DB_con();
         </tfoot>
     </table>
         </div>
-        <div class="col-md-8 pb-40 header-text" style="padding-top: 35px !important">
-        <h1>Side Event</h1>
-        <table id="side" class="display nowrap" style="width:100%">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>email</th>
-                <th>Country</th>
-                <th>Side Event</th>
-                
-            </tr>
-        </thead>
-        <tbody>
-            <?php                
-              $sql=$fetchdata->getSideEvent();
-              
-              while($row=mysqli_fetch_array($sql))
-              {    
-            ?>
-            <tr>
-                <td><?php echo $row['1']; ?></td>
-                <td><?php echo $row['2']; ?></td>
-                <td><?php echo $row['3']; ?></td>
-                <td><?php echo $row['4']; ?></td>
-               
-            </tr>
-            <?php } ?>
-        </tbody>
-        <tfoot>
-        </tfoot>
-    </table>
-        </div>
+       
       </div>
     </div>
   </section>
