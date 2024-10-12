@@ -39,7 +39,7 @@
         
         public function getTrips()
         {
-            $result = mysqli_query($this->dbh, "SELECT * FROM trips WHERE trip IN ('Bugesera International Airport (Limited Slots)', 'Nyabarongo II Multipurpose Dam', 'Norrsken House Kigali')");
+            $result = mysqli_query($this->dbh, "SELECT * FROM trips");
             return $result;
         }
 
