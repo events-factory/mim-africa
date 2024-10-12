@@ -20,16 +20,20 @@ if(isset($_POST['submit']))
       if($profession == "Rwanda") {
         if(($totalTripLoc/$totalAllowed)*100 < 30) {
           $sql = $insertTrip->insert($trip, $name, $email, $phone_number, $hotel, $profession);
-          echo "<script>alert('Slot Booked');</script>";
+          // echo "<script>alert('Slot Booked');</script>";
+          echo "<script>showCustomAlert('Slot Booked');</script>";
         }else{
-          echo "<script>alert('No available slot');</script>";
+          // echo "<script>alert('No available slot');</script>";
+          echo "<script>showCustomAlert('No available slot');</script>";
         }
       }else{
         $sql = $insertTrip->insert($trip, $name, $email, $phone_number, $hotel, $profession);
-        echo "<script>alert('Slot Booked');</script>";
+        // echo "<script>alert('Slot Booked');</script>";
+        echo "<script>showCustomAlert('Slot Booked');</script>";
       }
     }else{
-      echo "<script>alert('Slot Fully Booked');</script>";
+      // echo "<script>alert('Slot Fully Booked');</script>";
+      echo "<script>showCustomAlert('Slot Fully Booked');</script>";
     }
     
 }
@@ -58,6 +62,60 @@ if(isset($_POST['submit']))
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/main.css">
+  <style>
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      width: 300px;
+      text-align: center;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+
+<script>
+// JavaScript to handle the custom alert modal
+function showCustomAlert(message) {
+  var modal = document.getElementById("customAlert");
+  var alertMessage = document.getElementById("alertMessage");
+  alertMessage.textContent = message;
+  modal.style.display = "block";
+
+  var closeModal = document.getElementById("closeModal");
+  closeModal.onclick = function() {
+    modal.style.display = "none";
+  };
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+}
+</script>
+
   <script nonce="2b08652c-5a00-46de-b293-4fb0d7c3a425">
     (function(w, d) {
       ! function(dk, dl, dm, dn) {
@@ -123,6 +181,12 @@ if(isset($_POST['submit']))
   </script>
 </head>
 <body>
+<div id="customAlert" class="modal">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+    <p id="alertMessage"></p>
+  </div>
+</div>
   <!-- <header id="header" id="home">
     <div class="container">
       <div class="row align-items-center justify-content-between d-flex">
