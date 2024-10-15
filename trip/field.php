@@ -215,26 +215,23 @@ function showCustomAlert(message) {
         </div>
       </div>
       <div class="active-model-carusel">
-        
-      <div class="row align-items-center single-model item">
-        <div class="col-lg-6 model-left">
-          <div class="title justify-content-between d-flex">
-            <h4 class="mt-20">Bugesera International Airport</h4>
-            <h2>30<span>Slots</span></h2>
+        <div class="row align-items-center single-model item">
+          <div class="col-lg-6 model-left">
+            <div class="title justify-content-between d-flex">
+              <h4 class="mt-20">Bugesera International Airport</h4>
+              <h2>30<span>Slots</span></h2>
+            </div>
+            <p>
+            Located 40 kilometers south of Kigali, the new Bugesera International Airport is scheduled for completion by late 2026, with an estimated cost of $2 billion. The airport will feature a 130,000-square-meter main terminal building designed to handle 8 million passengers annually, with future expansions expected to accommodate more than 14 million. Additionally, the airport will include a cargo terminal with the capacity to process 150,000 tons of cargo per year. This development is set to position Rwanda as a significant aviation hub in Africa, contributing to both national and regional economic growth.
+            
+            </p>
+            <button class="text-uppercase primary-btn" onclick="pickchoice('Bugesera International Airport (Limited Slots)', 41)" href="#home">Book a Slot Now</button>
           </div>
-          <p>
-          Located 40 kilometers south of Kigali, the new Bugesera International Airport is scheduled for completion by late 2026, with an estimated cost of $2 billion. The airport will feature a 130,000-square-meter main terminal building designed to handle 8 million passengers annually, with future expansions expected to accommodate more than 14 million. Additionally, the airport will include a cargo terminal with the capacity to process 150,000 tons of cargo per year. This development is set to position Rwanda as a significant aviation hub in Africa, contributing to both national and regional economic growth.
-          
-          </p>
-          <button class="text-uppercase primary-btn" onclick="pickchoice('Bugesera International Airport (Limited Slots)', 41)" href="#home">Book a Slot Now</button>
-        </div>
-        <div class="col-lg-6 model-right">
-          <img class="img-fluid field-img" src="img/bugesera.png" alt="">
-        </div>
-      </div>
+          <div class="col-lg-6 model-right">
+            <img class="img-fluid field-img" src="img/bugesera.png" alt="">
+          </div>
+        </div>    
 
-        
-        
         <div class="row align-items-center single-model item">
           <div class="col-lg-6 model-left">
             <div class="title justify-content-between d-flex">
@@ -242,9 +239,9 @@ function showCustomAlert(message) {
               <h2>80<span>Slots</span></h2>
             </div>
             <p>
-            The Nyabarongo II Hydropower Plant is a vital multipurpose project for Rwanda’s renewable energy, water management, and agricultural development. Located on the Nyabarongo River, this project is designed to generate 43.5 MW of electricity while also mitigating the frequent downstream flooding that has posed risks to local communities. In addition to power generation, the dam will support irrigation and water supply efforts, playing a critical role in Rwanda’s sustainable development goals. The project, fully funded by the Government of Rwanda, involves the construction of a 48-meter-high concrete gravity dam with a crest length of 228 meters, featuring a surface power station equipped with two 8.5 MW Kaplan turbines. Construction began in late 2019 and is projected for completion by 2025.
-This hydropower project underscores Rwanda’s commitment to addressing both energy needs and environmental challenges.
-         </p>
+              The Nyabarongo II Hydropower Plant is a vital multipurpose project for Rwanda’s renewable energy, water management, and agricultural development. Located on the Nyabarongo River, this project is designed to generate 43.5 MW of electricity while also mitigating the frequent downstream flooding that has posed risks to local communities. In addition to power generation, the dam will support irrigation and water supply efforts, playing a critical role in Rwanda’s sustainable development goals. The project, fully funded by the Government of Rwanda, involves the construction of a 48-meter-high concrete gravity dam with a crest length of 228 meters, featuring a surface power station equipped with two 8.5 MW Kaplan turbines. Construction began in late 2019 and is projected for completion by 2025.
+              This hydropower project underscores Rwanda’s commitment to addressing both energy needs and environmental challenges.
+            </p>
             
             <button class="text-uppercase primary-btn" onclick="pickchoice('Nyabarongo II Multipurpose Dam', 21)" href="#home">Book a Slot Now</button>
           </div>
@@ -260,10 +257,8 @@ This hydropower project underscores Rwanda’s commitment to addressing both ene
               <h2>80<span>Slots</span></h2>
             </div>
             <p>
-            Norrsken House Kigali stands as a beacon of sustainability and innovation, fostering entrepreneurship in the heart of Africa. Built on the historic premises of Ecole Belge, this 12,000-square-meter space blends Kigali’s rich heritage with forward-thinking design to create East Africa’s largest hub for entrepreneurship. The workspace brings together a thriving community of purpose-driven entrepreneurs, investors, and changemakers, all working toward impactful solutions.
-As part of Rwanda’s digital transformation, Norrsken House offers more than just a workspace; it provides shared resources and a collaborative environment where startups at various stages—whether scaling or just beginning—can thrive. Participants will experience firsthand how Rwanda is embracing a sustainable future through innovation, with Norrsken serving as a home, knowledge center, and connector for entrepreneurs focused on social impact.
-  <p>
-              
+              Norrsken House Kigali stands as a beacon of sustainability and innovation, fostering entrepreneurship in the heart of Africa. Built on the historic premises of Ecole Belge, this 12,000-square-meter space blends Kigali’s rich heritage with forward-thinking design to create East Africa’s largest hub for entrepreneurship. The workspace brings together a thriving community of purpose-driven entrepreneurs, investors, and changemakers, all working toward impactful solutions.
+              As part of Rwanda’s digital transformation, Norrsken House offers more than just a workspace; it provides shared resources and a collaborative environment where startups at various stages—whether scaling or just beginning—can thrive. Participants will experience firsthand how Rwanda is embracing a sustainable future through innovation, with Norrsken serving as a home, knowledge center, and connector for entrepreneurs focused on social impact.           
             </p>
             <button class="text-uppercase primary-btn" onclick="pickchoice('Norrsken House Kigali', 21)" href="#home">Book a Slot Now</button>
           </div>
@@ -271,10 +266,22 @@ As part of Rwanda’s digital transformation, Norrsken House offers more than ju
             <img class="img-fluid field-img" src="img/NORRSKEN.png" alt="">
           </div>
         </div>
-        
-        
-        
-        
+        <div class="row align-items-center single-model item">
+          <div class="col-lg-6 model-left">
+            <div class="title justify-content-between d-flex">
+              <h4 class="mt-20">Amahoro Stadium</h4>
+              <h2>100<span>Slots</span></h2>
+            </div>
+            <p>
+              Norrsken House Kigali stands as a beacon of sustainability and innovation, fostering entrepreneurship in the heart of Africa. Built on the historic premises of Ecole Belge, this 12,000-square-meter space blends Kigali’s rich heritage with forward-thinking design to create East Africa’s largest hub for entrepreneurship. The workspace brings together a thriving community of purpose-driven entrepreneurs, investors, and changemakers, all working toward impactful solutions.
+              As part of Rwanda’s digital transformation, Norrsken House offers more than just a workspace; it provides shared resources and a collaborative environment where startups at various stages—whether scaling or just beginning—can thrive. Participants will experience firsthand how Rwanda is embracing a sustainable future through innovation, with Norrsken serving as a home, knowledge center, and connector for entrepreneurs focused on social impact.           
+            </p>
+            <button class="text-uppercase primary-btn" onclick="pickchoice('Amahoro Stadium', 100)" href="#home">Book a Slot Now</button>
+          </div>
+          <div class="col-lg-6 model-right">
+            <img class="img-fluid field-img" src="img/amahoro.jpg" alt="">
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -295,7 +302,8 @@ As part of Rwanda’s digital transformation, Norrsken House offers more than ju
                     <option value="Nyabarongo II Multipurpose Dam">Nyabarongo II Multipurpose Dam</option>
                     
                    
-                    <option value="Norrsken House Kigali">Norrsken House Kigali</option>                 
+                    <option value="Norrsken House Kigali">Norrsken House Kigali</option>      
+                    <option value="Amahoro Stadium">Amahoro Stadium</option>           
                   </select>
                 </div>
               </div>
