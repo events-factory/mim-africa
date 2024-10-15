@@ -18,7 +18,7 @@ if(isset($_POST['submit']))
 
     if(($totalTrip+1) < $totalAllowed) {
       if($profession == "Rwanda") {
-        if(($totalTripLoc/$totalAllowed)*100 < 30) {
+        if(($totalTripLoc/$totalAllowed)*100 < 100) {
           $sql = $insertTrip->insert($trip, $name, $email, $phone_number, $hotel, $profession);
           echo "<script>alert('Slot Booked');</script>";
           // echo "<script>showCustomAlert('Slot Booked');</script>";
@@ -243,7 +243,7 @@ function showCustomAlert(message) {
               This hydropower project underscores Rwanda’s commitment to addressing both energy needs and environmental challenges.
             </p>
             
-            <button class="text-uppercase primary-btn" onclick="pickchoice('Nyabarongo II Multipurpose Dam', 21)" href="#home">Book a Slot Now</button>
+            <button class="text-uppercase primary-btn" onclick="pickchoice('Nyabarongo II Multipurpose Dam', 80)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid field-img" src="img/nyabarongo.jpg" alt="">
@@ -260,7 +260,7 @@ function showCustomAlert(message) {
               Norrsken House Kigali stands as a beacon of sustainability and innovation, fostering entrepreneurship in the heart of Africa. Built on the historic premises of Ecole Belge, this 12,000-square-meter space blends Kigali’s rich heritage with forward-thinking design to create East Africa’s largest hub for entrepreneurship. The workspace brings together a thriving community of purpose-driven entrepreneurs, investors, and changemakers, all working toward impactful solutions.
               As part of Rwanda’s digital transformation, Norrsken House offers more than just a workspace; it provides shared resources and a collaborative environment where startups at various stages—whether scaling or just beginning—can thrive. Participants will experience firsthand how Rwanda is embracing a sustainable future through innovation, with Norrsken serving as a home, knowledge center, and connector for entrepreneurs focused on social impact.           
             </p>
-            <button class="text-uppercase primary-btn" onclick="pickchoice('Norrsken House Kigali', 21)" href="#home">Book a Slot Now</button>
+            <button class="text-uppercase primary-btn" onclick="pickchoice('Norrsken House Kigali', 80)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid field-img" src="img/NORRSKEN.png" alt="">
