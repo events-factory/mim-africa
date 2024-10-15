@@ -370,32 +370,6 @@ $hotel, $profession); echo "
               <img class="img-fluid field-img" src="img/NORRSKEN.png" alt="" />
             </div>
           </div>
-
-          <div class="row align-items-center single-model item">
-            <div class="col-lg-6 model-left">
-              <div class="title justify-content-between d-flex">
-                <h4 class="mt-20">Amahoro Stadium</h4>
-                <h2>80<span>Slots</span></h2>
-              </div>
-              <p>
-              The Amahoro Stadium as Amahoro National Stadium, is a multi-purpose stadium in the Gasabo district of Kigali, Rwanda. With a capacity of 45,508 it is the largest stadium in Rwanda and hosts football matches, concerts, and public events. 
-              Amahoro stadium has witnessed various renovations, In August 2022, SUMMA, a Turkiye-based construction company, secured a deal worth $165 million to renovate Amahoro stadium with Petit stade indoor sports, the upgrade increased the capacity to 45,508 seats.
-              
-              </p>
-
-              <p></p>
-              <button
-                class="text-uppercase primary-btn"
-                onclick="pickchoice('Amahoro Stadium', 100)"
-                href="#home"
-              >
-                Book a Slot Now
-              </button>
-            </div>
-            <div class="col-lg-6 model-right">
-              <img class="img-fluid field-img" src="img/amahoro.jpg" alt="" />
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -441,9 +415,6 @@ $hotel, $profession); echo "
 
                       <option value="Norrsken House Kigali">
                         Norrsken House Kigali
-                      </option>
-                      <option value="Amahoro Stadium">
-                        Amahoro Stadium
                       </option>
                     </select>
                   </div>
