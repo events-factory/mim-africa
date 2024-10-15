@@ -282,6 +282,21 @@ function showCustomAlert(message) {
             <img class="img-fluid field-img" src="img/amahoro.jpg" alt="">
           </div>
         </div>
+        <div class="row align-items-center single-model item">
+          <div class="col-lg-6 model-left">
+            <div class="title justify-content-between d-flex">
+              <h4 class="mt-20">Bridge to Prosperity</h4>
+              <h2>100<span>Slots</span></h2>
+            </div>
+            <p>
+            Gaseke is in Rwanda, about 30km North of Kigali, see the embedded map below to see where that is. Gaseke's Bridge to Prosperity is a suspension bridge, spanning 51m over the Mwange River. Previously all the population had to cross the bridge was a narrow metal beam which frequently got washed away during the flood season, making the river impassable. When the river cannot be safely crossed the communities are cut off from healthcare, education and markets, severely impacting their quality of life.
+            </p>
+            <button class="text-uppercase primary-btn" onclick="pickchoice('Bridge to Prosperity', 100)" href="#home">Book a Slot Now</button>
+          </div>
+          <div class="col-lg-6 model-right">
+            <img class="img-fluid field-img" src="img/gaseke.jpg" alt="">
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -296,14 +311,12 @@ function showCustomAlert(message) {
               <div class="col-md-12 wrap-left">
                 <div class="" id="default-select">
                   <select class="form-control" name="trip" required id="select-element-trip">
-                    <option value="" disabled selected hidden>Field Visit Location</option>
-                   
+                    <option value="" disabled selected hidden>Field Visit Location</option>                   
                     <option value="Bugesera International Airport (Limited Slots)">Bugesera International Airport (Limited Slots)</option>
-                    <option value="Nyabarongo II Multipurpose Dam">Nyabarongo II Multipurpose Dam</option>
-                    
-                   
+                    <option value="Nyabarongo II Multipurpose Dam">Nyabarongo II Multipurpose Dam</option>                  
                     <option value="Norrsken House Kigali">Norrsken House Kigali</option>      
-                    <option value="Amahoro Stadium">Amahoro Stadium</option>           
+                    <option value="Amahoro Stadium">Amahoro Stadium</option>  
+                    <option value="Bridge to Prosperity">Bridge to Prosperity</option>         
                   </select>
                 </div>
               </div>
