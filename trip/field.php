@@ -215,7 +215,7 @@ function showCustomAlert(message) {
         </div>
       </div>
       <div class="active-model-carusel">
-        <div class="row align-items-center single-model item">
+        <!-- <div class="row align-items-center single-model item">
           <div class="col-lg-6 model-left">
             <div class="title justify-content-between d-flex">
               <h4 class="mt-20">Bugesera International Airport</h4>
@@ -230,7 +230,7 @@ function showCustomAlert(message) {
           <div class="col-lg-6 model-right">
             <img class="img-fluid field-img" src="img/bugesera.png" alt="">
           </div>
-        </div>    
+        </div>     -->
 
         <div class="row align-items-center single-model item">
           <div class="col-lg-6 model-left">
@@ -312,7 +312,7 @@ function showCustomAlert(message) {
                 <div class="" id="default-select">
                   <select class="form-control" name="trip" required id="select-element-trip">
                     <option value="" disabled selected hidden>Field Visit Location</option>                   
-                    <option value="Bugesera International Airport (Limited Slots)">Bugesera International Airport (Limited Slots)</option>
+                    <!-- <option value="Bugesera International Airport (Limited Slots)">Bugesera International Airport (Limited Slots)</option> -->
                     <option value="Nyabarongo II Multipurpose Dam">Nyabarongo II Multipurpose Dam</option>                  
                     <option value="Norrsken House Kigali">Norrsken House Kigali</option>      
                     <option value="Amahoro Stadium">Amahoro Stadium</option>  
