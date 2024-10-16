@@ -239,7 +239,7 @@ function showCustomAlert(message) {
               <h2>80<span>Slots</span></h2>
             </div>
             <p>
-              The Nyabarongo II Hydropower Plant is a vital multipurpose project for Rwanda’s renewable energy, water management, and agricultural development. Located on the Nyabarongo River, this project is designed to generate 43.5 MW of electricity while also mitigating the frequent downstream flooding that has posed risks to local communities. In addition to power generation, the dam will support irrigation and water supply efforts, playing a critical role in Rwanda’s sustainable development goals. The project, fully funded by the Government of Rwanda, involves the construction of a 48-meter-high concrete gravity dam with a crest length of 228 meters, featuring a surface power station equipped with two 8.5 MW Kaplan turbines. Construction began in late 2019 and is projected for completion by 2025.
+              The Nyabarongo II Hydropower Plant is a vital multipurpose project for Rwanda’s renewable energy, water management, and agricultural development. 
               This hydropower project underscores Rwanda’s commitment to addressing both energy needs and environmental challenges.
             </p>
             
@@ -257,8 +257,7 @@ function showCustomAlert(message) {
               <h2>80<span>Slots</span></h2>
             </div>
             <p>
-              Norrsken House Kigali stands as a beacon of sustainability and innovation, fostering entrepreneurship in the heart of Africa. Built on the historic premises of Ecole Belge, this 12,000-square-meter space blends Kigali’s rich heritage with forward-thinking design to create East Africa’s largest hub for entrepreneurship. The workspace brings together a thriving community of purpose-driven entrepreneurs, investors, and changemakers, all working toward impactful solutions.
-              As part of Rwanda’s digital transformation, Norrsken House offers more than just a workspace; it provides shared resources and a collaborative environment where startups at various stages—whether scaling or just beginning—can thrive. Participants will experience firsthand how Rwanda is embracing a sustainable future through innovation, with Norrsken serving as a home, knowledge center, and connector for entrepreneurs focused on social impact.           
+              Norrsken House Kigali stands as a beacon of sustainability and innovation, fostering entrepreneurship in the heart of Africa. Built on the historic premises of Ecole Belge, this 12,000-square-meter space blends Kigali’s rich heritage with forward-thinking design to create East Africa’s largest hub for entrepreneurship. 
             </p>
             <button class="text-uppercase primary-btn" onclick="pickchoice('Norrsken House Kigali', 80)" href="#home">Book a Slot Now</button>
           </div>
@@ -273,8 +272,7 @@ function showCustomAlert(message) {
               <h2>100<span>Slots</span></h2>
             </div>
             <p>
-              Norrsken House Kigali stands as a beacon of sustainability and innovation, fostering entrepreneurship in the heart of Africa. Built on the historic premises of Ecole Belge, this 12,000-square-meter space blends Kigali’s rich heritage with forward-thinking design to create East Africa’s largest hub for entrepreneurship. The workspace brings together a thriving community of purpose-driven entrepreneurs, investors, and changemakers, all working toward impactful solutions.
-              As part of Rwanda’s digital transformation, Norrsken House offers more than just a workspace; it provides shared resources and a collaborative environment where startups at various stages—whether scaling or just beginning—can thrive. Participants will experience firsthand how Rwanda is embracing a sustainable future through innovation, with Norrsken serving as a home, knowledge center, and connector for entrepreneurs focused on social impact.           
+              Amahoro stadium is a multi-purpose stadium in Kigali, Rwanda. It is the largest stadium in Rwanda with a capacity of 30,000 people. It is used mostly for football matches and it also has athletics facilities. The stadium hosted the opening ceremony and the football competition of the 2016 African Nations Championship.        
             </p>
             <button class="text-uppercase primary-btn" onclick="pickchoice('Amahoro Stadium', 100)" href="#home">Book a Slot Now</button>
           </div>
