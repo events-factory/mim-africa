@@ -211,29 +211,29 @@ function showCustomAlert(message) {
       </div> -->
       <div class="row d-flex justify-content-center pb-40">
         <div class="col-md-8 pb-40 header-text" style="padding-top: 35px !important">
-          <h1 class="text-center pb-10">Site Visits Registrations are now closed</h1>
+          <h1 class="text-center pb-10">Sites Visits</h1>
         </div>
       </div>
       <div class="active-model-carusel">
-        <div class="row align-items-center single-model item">
+        <!-- <div class="row align-items-center single-model item">
           <div class="col-lg-6 model-left">
             <div class="title justify-content-between d-flex">
               <h4 class="mt-20"></h4>
-              <!-- <h2>30<span>Slots</span></h2> -->
+              <h2>30<span>Slots</span></h2>
             </div>
-            <!-- <p>
+            <p>
             Located 40 kilometers south of Kigali, the new Bugesera International Airport is scheduled for completion by late 2026, with an estimated cost of $2 billion. The airport will feature a 130,000-square-meter main terminal building designed to handle 8 million passengers annually, with future expansions expected to accommodate more than 14 million. Additionally, the airport will include a cargo terminal with the capacity to process 150,000 tons of cargo per year. This development is set to position Rwanda as a significant aviation hub in Africa, contributing to both national and regional economic growth.
             
             </p>
             <button class="text-uppercase primary-btn" onclick="pickchoice('Bugesera International Airport (Limited Slots)', 41)" href="#home">Book a Slot Now</button>
-           -->
+          
           </div>
-          <!-- <div class="col-lg-6 model-right">
+          <div class="col-lg-6 model-right">
             <img class="img-fluid field-img" src="img/bugesera.png" alt="">
-          </div> -->
-        </div>    
+          </div>
+        </div>     -->
 
-        <!-- <div class="row align-items-center single-model item">
+        <div class="row align-items-center single-model item">
           <div class="col-lg-6 model-left">
             <div class="title justify-content-between d-flex">
               <h4 class="mt-20">Nyabarongo II Multipurpose Dam</h4>
@@ -295,23 +295,23 @@ function showCustomAlert(message) {
           <div class="col-lg-6 model-right">
             <img class="img-fluid field-img" src="img/gaseke.jpg" alt="">
           </div>
-        </div> -->
+        </div>
       </div>
     </div>
   </section>
-  <!-- <section class="banner-area relative" id="home"> -->
-    <!-- <div class="overlay overlay-bg"></div> -->
-    <!-- <div class="container">
+  <section class="banner-area relative" id="home">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
       <div class="row fullscreen d-flex align-items-center justify-content-center">
-        <div class="col-lg-12 col-md-12 header-right"> -->
-          <!-- <h4 class="text-white pb-30">Book Your Spot Today! The Trip is from 8.30am</h4> -->
-          <!-- <form class="form" role="form" autocomplete="off" method="POST" action="" name="insert"> -->
-            <!-- <div class="form-group row">
+        <div class="col-lg-12 col-md-12 header-right">
+          <h4 class="text-white pb-30">Book Your Spot Today! The Trip is from 8.30am</h4>
+          <form class="form" role="form" autocomplete="off" method="POST" action="" name="insert">
+             <div class="form-group row">
               <div class="col-md-12 wrap-left">
                 <div class="" id="default-select">
                   <select class="form-control" name="trip" required id="select-element-trip">
                     <option value="" disabled selected hidden>Field Visit Location</option>                   
-                    <option value="Bugesera International Airport (Limited Slots)">Bugesera International Airport (Limited Slots)</option>
+                    <!-- <option value="Bugesera International Airport (Limited Slots)">Bugesera International Airport (Limited Slots)</option> -->
                     <option value="Nyabarongo II Multipurpose Dam">Nyabarongo II Multipurpose Dam</option>                  
                     <option value="Norrsken House Kigali">Norrsken House Kigali</option>      
                     <option value="Amahoro Stadium">Amahoro Stadium</option>  
@@ -319,11 +319,11 @@ function showCustomAlert(message) {
                   </select>
                 </div>
               </div>
-            </div> -->
-            <!-- <div class="from-group">
-              <input class="form-control txt-field" type="email" id="email-filter" name="email" placeholder="Email address" required> -->
+            </div>
+            <div class="from-group">
+              <input class="form-control txt-field" type="email" id="email-filter" name="email" placeholder="Email address" required>
               <!-- <button id="email-filter-exist" class="btn btn-default btn-lg btn-block text-center text-uppercase">Verify</button> -->
-              <!-- <div class="" id="rest-of-form">
+              <div class="" id="rest-of-form">
                   <input class="form-control txt-field" type="text" id="fullname" name="name" placeholder="Your name" required>              
                   <input class="form-control txt-field" type="tel" id="phone_number" name="phone_number" placeholder="Phone number(Include Country Code)">
                   <input class="form-control txt-field" type="text" id="hotle" name="hotel" placeholder="Hotel(Where are you staying?)" required>
@@ -334,7 +334,7 @@ function showCustomAlert(message) {
                       <input type="submit" class="btn btn-default btn-lg btn-block text-center text-uppercase"  value="Confirm Booking" name="submit">
                     </div>
                   </div>
-              </div> -->
+              </div>
             </div>
           </form>
         </div>
