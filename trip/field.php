@@ -218,21 +218,22 @@ function showCustomAlert(message) {
         <div class="row align-items-center single-model item">
           <div class="col-lg-6 model-left">
             <div class="title justify-content-between d-flex">
-              <h4 class="mt-20">Bugesera International Airport</h4>
-              <h2>30<span>Slots</span></h2>
+              <h4 class="mt-20">Site Visits Registrations are now closed</h4>
+              <!-- <h2>30<span>Slots</span></h2> -->
             </div>
-            <p>
+            <!-- <p>
             Located 40 kilometers south of Kigali, the new Bugesera International Airport is scheduled for completion by late 2026, with an estimated cost of $2 billion. The airport will feature a 130,000-square-meter main terminal building designed to handle 8 million passengers annually, with future expansions expected to accommodate more than 14 million. Additionally, the airport will include a cargo terminal with the capacity to process 150,000 tons of cargo per year. This development is set to position Rwanda as a significant aviation hub in Africa, contributing to both national and regional economic growth.
             
             </p>
             <button class="text-uppercase primary-btn" onclick="pickchoice('Bugesera International Airport (Limited Slots)', 41)" href="#home">Book a Slot Now</button>
+           -->
           </div>
-          <div class="col-lg-6 model-right">
+          <!-- <div class="col-lg-6 model-right">
             <img class="img-fluid field-img" src="img/bugesera.png" alt="">
-          </div>
+          </div> -->
         </div>    
 
-        <div class="row align-items-center single-model item">
+        <!-- <div class="row align-items-center single-model item">
           <div class="col-lg-6 model-left">
             <div class="title justify-content-between d-flex">
               <h4 class="mt-20">Nyabarongo II Multipurpose Dam</h4>
@@ -294,7 +295,7 @@ function showCustomAlert(message) {
           <div class="col-lg-6 model-right">
             <img class="img-fluid field-img" src="img/gaseke.jpg" alt="">
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
